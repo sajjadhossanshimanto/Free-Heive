@@ -78,6 +78,36 @@ class EduHive:
             self._pull_subject(i)
 
 
+
+    def get_content(self):
+        r = requests.request("GET", self.url, headers=headers, cookies=cookies)
+        return r.json()
+
+    def loop_hool(self):
+        c=0
+        while 1:# how do i know where to stop
+            c+=1
+            print(c, end='\r')
+
+            content = self.get_content()
+            chapter_id = content.get('chapterId')
+            if not chapter_id:
+                continue
+            
+            sub_name = content['subject']['name']
+            cwd = self.root_dir.joinpath(sub_name)
+            cwd.mkdir(exist_ok=True)# might raise exception for non existing parent folder
+            
+            cwd.joinpath(chapter_id)
+            if cwd.exists(): continue
+            with open(cwd, 'w') as f:
+                json.dump(content, f)
+            
+            print(content['name'])
+            # temporarily
+            if chapter_id=='62bbe16c7025da7cee5e0f9a':
+                break
+
 f='data/eduheive/hsc/subjects.json'
 e=EduHive(f)
 e.pull_subject_by_name()
