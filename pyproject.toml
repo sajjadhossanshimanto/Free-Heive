@@ -8,6 +8,7 @@ authors = ["shimanto <s.m.sajjadhossanshimanto.c@gmail.com>"]
 python = "3.9.5"
 requests = "^2.28.1"
 pandas = "^1.4.4"
+SQLAlchemy = "^1.4.40"
 
 [tool.poetry.dev-dependencies]
 

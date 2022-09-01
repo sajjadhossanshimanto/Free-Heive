@@ -29,6 +29,7 @@ class EduHive:
     def __init__(self, subject_fp) -> None:
         self.subjects = pb.read_json(subject_fp)
         self.root_dir = Path(subject_fp).parent # working directory
+        self.dbe = create_engine(f'sqlite:///{self.root_dir.name}.db')
 
     def get_original_course(self, subject_id, chapter_id, save_to:Path):
         ''' considered save_to as non-existinb. ooened save to with "w" mode '''
@@ -77,6 +78,25 @@ class EduHive:
         for i in self.subjects:
             self._pull_subject(i)
 
+
+    def save_db(self, s, paper=None):
+        '''
+        s :json: course content
+        '''
+        subject_name = s['subject']['name']
+        for subcp in s['sections']:
+            p = pb.DataFrame.from_dict(subcp['contents'])
+            p = p[['title', 'vimeoId']]
+
+            p['section_name']=subcp['name']
+            p['chapter_name']=s['name']
+            p['chapter_id']=s['chapterId']# optional
+            p['subject_name']=subject_name
+            p['subject_id']=s['subject']['_id']# optional
+            p['paper']=paper
+
+            with self.dbe.connect() as con:
+                p.to_sql(subject_name, con, index=False)
 
 
     def get_content(self):
