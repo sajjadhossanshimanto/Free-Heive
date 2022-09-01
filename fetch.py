@@ -3,6 +3,7 @@ import re
 from pathlib import Path
 from typing import Generator
 import requests
+from sqlalchemy import create_engine
 import json
 import pandas as pb
 
@@ -31,20 +32,15 @@ class EduHive:
         self.root_dir = Path(subject_fp).parent # working directory
         self.dbe = create_engine(f'sqlite:///{self.root_dir.name}.db')
 
-    def get_original_course(self, subject_id, chapter_id, save_to:Path):
-        ''' considered save_to as non-existinb. ooened save to with "w" mode '''
-        save_to = save_to.joinpath(chapter_id)
-        if save_to.is_file():
-            return
-        
+    @classmethod
+    def get_original_course(self, subject_id, chapter_id):
         params={
             'subject':subject_id,
             'chapterId':chapter_id
         }
 
         r = requests.request("GET", self.url, headers=headers, params=params, cookies=cookies)
-        with open(save_to, 'w') as f:
-            f.write(r.text)
+        return r.json()
 
     def pull_subject_by_name(self, name:str='উচ্চতর গণিত'):
         
@@ -56,26 +52,17 @@ class EduHive:
     def _pull_subject(self, sub:pb.Series):
         subject_id = sub['_id'].values[0]
         chapters = sub['chapters'].values[0]
-        sub_dir = self.root_dir.joinpath(
-            sub['name'].values[0]
-        )
 
         for cp in chapters:
             chapter_id = cp["_id"]
-            paper = str(cp.get('paper'))
-            # chapter name subject name is no longer anh need
-            name = cp['name']
-
-            file_path = sub_dir
-            if paper: 
-                file_path = file_path.joinpath(paper)
-            file_path.joinpath(name)
-            file_path.mkdir(parents=True, exist_ok=True)
-
-            self.get_original_course(subject_id, chapter_id, file_path)
+            paper = cp.get('paper')
+            
+            s = self.get_original_course(subject_id, chapter_id)
+            self.save_db(s, paper)
+        del s
 
     def pull_all_subject(self):
-        for i in self.subjects:
+        for _, i in self.subjects.iterrows():
             self._pull_subject(i)
 
 
@@ -99,7 +86,7 @@ class EduHive:
                 p.to_sql(subject_name, con, index=False)
 
 
-    def get_content(self):
+    def _get_content(self):
         r = requests.request("GET", self.url, headers=headers, cookies=cookies)
         return r.json()
 
@@ -130,5 +117,8 @@ class EduHive:
 
 f='data/eduheive/hsc/subjects.json'
 e=EduHive(f)
-e.pull_subject_by_name()
+# e.pull_subject_by_name()
 # e.pull_all_subject()
+p=EduHive.get_original_course("60b72b60e9358a41edd16416", '614ec4044d715908e178572d')
+
+print(p)
