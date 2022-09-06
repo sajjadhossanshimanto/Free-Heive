@@ -2,15 +2,10 @@
 import re
 import requests
 import json
-# from bs4 import BeautifulSoup
 
 
 #%%
 # url = "https://vimeo.com/api/oembed.json?url=https%3A%2F%2Fvimeo.com%2F622338938"
-# url = "https://vimeo.com/api/oembed.json?"
-
-vimeo_id = 622338938
-
 headers = {
   'User-Agent': 'Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36',
   'sec-ch-ua-platform': '"Linux"',
@@ -20,7 +15,7 @@ headers = {
   'Accept-Language': 'en-US,en;q=0.9',
 }
 
-
+cache={}# TODO; cache vimeo_id and h tag
 class Vimeo:
     embed_url = "https://vimeo.com/api/oembed.json"
     # TODO: we can also save h tag and then no need to fetch from embed link
@@ -60,7 +55,9 @@ class Vimeo:
         pass
 
 
-# p=Vimeo(vimeo_id)
-# print(p.embed_link())
+if __name__=='__main__':
+    vimeo_id = 622338938
+    # p=Vimeo(vimeo_id)
+    # print(p.embed_link())
 
 

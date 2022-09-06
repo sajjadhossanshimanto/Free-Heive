@@ -1,23 +1,11 @@
 #%%
-from sqlalchemy import create_engine, select, Table, Column, Integer, String, MetaData
+from sqlalchemy import create_engine, select, Table, MetaData
 from sqlalchemy import inspect
 from sqlalchemy import distinct
-from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy.orm import sessionmaker
 from functools import lru_cache
 import pandas as pb
 
-#%%
-Base = declarative_base()
-class Lecture(Base):
-    __tablename__ = "user_account"
-
-    vimeoId = Column(Integer, primary_key=True)
-    title = Column(String)
-    chapter_name = Column(String)
-    paper = Column(Integer)
-
-    def __repr__(self):
-        return f"Lecture(id={self.vimeoId!r}, name={self.name!r})"
 
 #%%
 class DB:
@@ -28,17 +16,12 @@ class DB:
         self.metadata = MetaData(self.engine)
         
         self.table: Table = None
-        # self._table_subject:str = None
-    
-        # cache 
-        # self.cache_paper = {}
+
 
     def select_subject(self, table_name):
         '''considering name tobe present in table list '''
-        # self._selected_sub = table_name
-        # Lecture.__tablename__ = table_name
-        self.table = Table(table_name, self.metadata, autoload_with = self.engine)
 
+        self.table = Table(table_name, self.metadata, autoload_with = self.engine)
 
     @lru_cache
     def list_subject(self):
@@ -53,31 +36,49 @@ class DB:
         # return df.values[0] and len(df) or 0
         return df
     
-    def list_chapter(self):
-        # return self.session.query(Lecture.chapter_name).distinct()
-        # from sqlalchemy import distinct, select
-        stmt = select(distinct(self.table.c.chapter_name))
+    def list_all_chapter(self):
+        stmt = select(distinct(self.table.c.chapter_name), self.table.c.paper)
+        df = pb.read_sql_query(stmt, self.engine)
+        return df
+    
+    def list_chapter(self, paper):
+        stmt = select(
+            distinct(self.table.c.chapter_name), self.table.c.paper
+            ).where(
+                self.table.c.paper==paper
+            )
         df = pb.read_sql_query(stmt, self.engine)
         return df
     
     def list_section(self, chapter_name):
-        stmt = select(distinct(self.table.c.section_name))
+        stmt = select(
+            distinct(self.table.c.section_name)
+        ).where(
+            self.table.c.chapter_name==chapter_name
+        )
         df = pb.read_sql_query(stmt, self.engine)
         return df
 
     def list_listion(self, section_name):
+        '''
+        {
+            'title' : 'vimeoid'
+        }
+        '''
         stmt = select(
             self.table.c.vimeoId, self.table.c.title
         ).where(
             self.table.c.section_name==section_name
         )
         df = pb.read_sql_query(stmt, self.engine)
-        # df=self.session.execute(stmt)
+        df.set_index('title')
         return df
 
 #%%
-d=DB("data/eduheive/hsc/hsc.db")
-d.select_subject('English Grammar')
-print(d.list_listion("Discussion on Article"))
+if __name__=='__main__':
+    hsc=DB("data/eduheive/hsc/hsc.db")
+    hsc.select_subject('উচ্চতর গণিত')
+    p=hsc.list_listion('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
+    # print(hsc.list_listion("Discussion on Article"))
+    print(p)
 
-# %%
