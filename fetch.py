@@ -30,7 +30,9 @@ class EduHive:
     def __init__(self, subject_fp) -> None:
         self.subjects = pb.read_json(subject_fp)
         self.root_dir = Path(subject_fp).parent # working directory
-        self.dbe = create_engine(f'sqlite:///{self.root_dir.name}.db')
+        self.dbe = create_engine(
+            f'sqlite:///{self.root_dir.joinpath(self.root_dir.name)}.db'
+        )
 
     @classmethod
     def get_original_course(self, subject_id, chapter_id):
@@ -41,7 +43,7 @@ class EduHive:
 
         r = requests.request("GET", self.url, headers=headers, params=params, cookies=cookies)
         return r.json()
-
+        
     def pull_subject_by_name(self, name:str='উচ্চতর গণিত'):
         
         sub = self.subjects.loc[#TODO: pop row
@@ -57,9 +59,20 @@ class EduHive:
             chapter_id = cp["_id"]
             paper = cp.get('paper')
             
-            s = self.get_original_course(subject_id, chapter_id)
-            self.save_db(s, paper)
-        del s
+            try:
+                s = self.get_original_course(subject_id, chapter_id)
+            except Exception as e:
+                print(f'[!] {subject_id} -- {chapter_id}')
+                continue
+
+            try:
+                self.save_db(s, paper)
+            except KeyError as e:
+                print(f'[!!]keyerror {subject_id} -- {chapter_id}')
+                continue
+
+            print(chapter_id)
+        # del s
 
     def pull_all_subject(self):
         for _, i in self.subjects.iterrows():
@@ -83,7 +96,8 @@ class EduHive:
             p['paper']=paper
 
             with self.dbe.connect() as con:
-                p.to_sql(subject_name, con, index=False)
+                p.to_sql(subject_name, con, index=False, if_exists='append')
+            con.close()
 
 
     def _get_content(self):
@@ -117,8 +131,8 @@ class EduHive:
 
 f='data/eduheive/hsc/subjects.json'
 e=EduHive(f)
-# e.pull_subject_by_name()
+e.pull_subject_by_name("রসায়ন")
 # e.pull_all_subject()
-p=EduHive.get_original_course("60b72b60e9358a41edd16416", '614ec4044d715908e178572d')
+# p=EduHive.get_original_course("60b72b60e9358a41edd16416", '614ec4044d715908e178572d')
 
-print(p)
+# print(p)
