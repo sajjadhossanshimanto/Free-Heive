@@ -1,4 +1,5 @@
 #%%
+from numpy import ndarray as array
 from sqlalchemy import create_engine, select, Table, MetaData
 from sqlalchemy import inspect
 from sqlalchemy import distinct
@@ -28,7 +29,7 @@ class DB:
         insp = inspect(self.engine)
         return insp.get_table_names()
 
-    # @lru_cache()
+    # @lru_cache()# need tk cache according to the subject
     def list_paper(self):
         # self.session.query(Lecture.chapter_name).distinct().count()
         stmt = select(distinct(self.table.c.paper))
@@ -37,8 +38,12 @@ class DB:
         return df
     
     def list_all_chapter(self):
+        '''
+        chapter -- paper
+        '''
         stmt = select(distinct(self.table.c.chapter_name), self.table.c.paper)
         df = pb.read_sql_query(stmt, self.engine)
+        df.set_index('chapter_name', inplace=True)
         return df
     
     def list_chapter(self, paper):
@@ -50,16 +55,16 @@ class DB:
         df = pb.read_sql_query(stmt, self.engine)
         return df
     
-    def list_section(self, chapter_name):
+    def list_section(self, chapter_name:str) -> array:
         stmt = select(
             distinct(self.table.c.section_name)
         ).where(
             self.table.c.chapter_name==chapter_name
         )
         df = pb.read_sql_query(stmt, self.engine)
-        return df
+        return df.values
 
-    def list_listion(self, section_name):
+    def list_listion(self, section_name:str):
         '''
         {
             'title' : 'vimeoid'
@@ -71,14 +76,16 @@ class DB:
             self.table.c.section_name==section_name
         )
         df = pb.read_sql_query(stmt, self.engine)
-        df.set_index('title')
+        df.set_index('title', inplace=True)
         return df
 
 #%%
 if __name__=='__main__':
-    hsc=DB("data/eduheive/hsc/hsc.db")
-    hsc.select_subject('উচ্চতর গণিত')
-    p=hsc.list_listion('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
+    f="data/eduheive/hsc/hsc.db"
+    f="/home/kali/Desktop/coding/pyt/eduhive/data/eduheive/hsc/hsc.db"
+    d=DB(f)
+    d.select_subject('উচ্চতর গণিত')
+    p=d.list_listion('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
     # print(hsc.list_listion("Discussion on Article"))
     print(p)
 
