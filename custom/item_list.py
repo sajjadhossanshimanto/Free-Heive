@@ -25,7 +25,7 @@ KV = '''
 
         Label:
             text: root.title
-            font_nmae: root.font_name
+            font_name: root.font_name
             bold: True
             font_style: "H6"
             opposite_colors: True
@@ -58,12 +58,21 @@ Builder.load_string(KV)
 class ChapterItem(OneLineRightIconListItem):
     manager = ObjectProperty()
 
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.ids._lbl_primary.font_name = self.manager.bng_fnt
+
     def on_release(self):
         return self.manager.list_section(self.text)
 
 
 class SectionItem(OneLineListItem):
     manager = ObjectProperty()
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.ids._lbl_primary.font_name = self.manager.bng_fnt
 
     def on_release(self):
         return self.manager.list_video(self.text)

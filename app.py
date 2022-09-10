@@ -10,6 +10,7 @@ from kivy.utils import get_color_from_hex
 from kivy.lang import Builder
 from kivymd.app import MDApp
 from kivymd.uix.label import MDLabel
+from kivymd.uix.toolbar.toolbar import MDTopAppBar
 from custom.item_list import SectionItem, SubjectItem, ChapterItem
 from functools import partial
 from kivymd.uix.list import OneLineListItem
@@ -56,7 +57,9 @@ class EduHive(MDApp):
         return Builder.load_file('kvs/app.kv')
 
     def on_start(self):
-        #TODO: add with loop
+        self.root.ids.chapter_name.ids.label_title.font_name = self.bng_fnt
+        self.root.ids.subject_name.ids.label_title.font_name = self.bng_fnt
+
         for i in d.list_subject():
             self.root.ids.subjects.add_widget(SubjectItem(
                 title=i,
@@ -69,9 +72,12 @@ class EduHive(MDApp):
         self.root.current = sc_name
 
     def list_video(self, section_name):
-        d.list_listion(section_name)
+        # d.list_listion(section_name)
+        print(section_name)
 
     def list_section(self, chapter_name):
+        self.root.ids.chapter_name.title = chapter_name
+
         list_view = self.root.ids.sub_chapter
         list_view.children=[]
         list_view.canvas.clear()
@@ -86,7 +92,6 @@ class EduHive(MDApp):
     def list_chapter(self, sub_name):
         # self.root.ids.subject_name.
         self.root.ids.subject_name.title = sub_name
-        self.root.ids.subject_name.font_name = self.bng_fnt
         d.select_subject(sub_name)
         
         list_view = self.root.ids.container
@@ -115,23 +120,4 @@ ExceptionManager.add_handler(E())
 
 
 EduHive().run()
-
-
-
-
-
-
-# Creating App class
-class CalculatorApp(MDApp):
-    color_scheme = {
-        "background": get_color_from_hex('#282F37'),# 91% black
-        "blue": '#263347',
-        'green': '#03C03C',
-        'white': [1, 1, 1, 1]
-    }
-
-    def build(self):
-        
-        return Builder.load_file('kvs/app.kv')
-
 
