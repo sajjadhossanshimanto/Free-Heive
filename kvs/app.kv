@@ -41,9 +41,7 @@ MDScreenManager:
                 left_action_items: 
                     [["arrow-left", lambda x: app.change_screen('home_screen')]]
 
-            # MDBoxLayout:
             MDScrollView:
-
                 MDList:
                     id: container
             
@@ -51,8 +49,16 @@ MDScreenManager:
     MDScreen:
         name: "sections"
 
-        MDTopAppBar:
-            id: subject_name
-            title: 'subject_name'
-            left_action_items: [["arrow-left", lambda x: app.change_screen('chapters')]]
+        MDBoxLayout:
+            orientation: "vertical"
+            md_bg_color: app.color_scheme['bg']
+
+            MDTopAppBar:
+                id: chapter_name
+                title: 'subject_name'
+                left_action_items: [["arrow-left", lambda x: app.change_screen('chapters')]]
+
+            MDScrollView:
+                MDList:
+                    id: sub_chapter
 

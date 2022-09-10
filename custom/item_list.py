@@ -1,0 +1,70 @@
+from kivy.animation import Animation
+from kivy.clock import Clock
+from kivymd.uix.list import OneLineListItem, OneLineRightIconListItem, IconRightWidget, MDList
+from kivy.properties import StringProperty, ObjectProperty
+from kivymd.uix.boxlayout import MDBoxLayout
+from kivy.lang import Builder
+
+
+KV = '''
+<SubjectItem>
+    size_hint_y: None
+    height: "200dp"
+    radius: 24
+
+    MDSmartTile:
+        id: tile
+        radius: 24
+        box_radius: 0, 0, 24, 24
+        box_color: 0, 0, 0, .5
+        source: root.img
+        size_hint: None, None
+        size: root.size
+        mipmap: True
+        on_release: root.on_release()
+
+        Label:
+            text: root.title
+            font_nmae: root.font_name
+            bold: True
+            font_style: "H6"
+            opposite_colors: True
+
+'''
+Builder.load_string(KV)
+
+class SubjectItem(MDBoxLayout):
+    img = StringProperty()
+    font_name = StringProperty()
+    title = StringProperty()
+    manager = ObjectProperty()
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.ids.tile.ids.image.ripple_duration_in_fast = 0.05
+
+    def on_release(self):
+        self.manager.list_chapter(self.title)
+
+
+
+KV = '''
+<ChapterItem>
+    IconRightWidget:
+        icon: 'arrow-right'
+'''
+Builder.load_string(KV)
+
+class ChapterItem(OneLineRightIconListItem):
+    manager = ObjectProperty()
+
+    def on_release(self):
+        return self.manager.list_section(self.text)
+
+
+class SectionItem(OneLineListItem):
+    manager = ObjectProperty()
+
+    def on_release(self):
+        return self.manager.list_video(self.text)
+

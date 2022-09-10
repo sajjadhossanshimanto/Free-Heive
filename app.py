@@ -9,9 +9,9 @@ from kivy.utils import get_color_from_hex
 from kivy.lang import Builder
 from kivymd.app import MDApp
 from kivymd.uix.label import MDLabel
-from custom.item_list import SubjectItem
-from kivymd.uix.list import OneLineRightIconListItem, IconRightWidget, MDList
-
+from custom.item_list import SectionItem, SubjectItem, ChapterItem
+from functools import partial
+from kivymd.uix.list import OneLineListItem
 from script.data_base import DB
 
 try:
@@ -68,8 +68,20 @@ class EduHive(MDApp):
     def change_screen(self, sc_name):
         self.root.current = sc_name
 
+    def list_video(self, section_name):
+        d.list_listion(section_name)
+
     def list_section(self, chapter_name):
-        print(chapter_name)
+        list_view = self.root.ids.sub_chapter
+        for i in list_view.children:
+            list_view.remove_widget(i)
+        
+        for i in d.list_section(chapter_name):
+            i=i[0]
+            item = SectionItem(text=i, manager=self)
+            list_view.add_widget(item)
+
+        self.change_screen('sections')
 
     def list_chapter(self, sub_name):
         # self.root.ids.subject_name.
@@ -78,14 +90,13 @@ class EduHive(MDApp):
         list_view = self.root.ids.container
 
         for i in d.list_all_chapter().index:
-            item = OneLineRightIconListItem(text=i)
-            item.on_release = lambda *x: self.list_section(item.text)
-            item.add_widget(IconRightWidget(icon='arrow-right'))
-            
+            item = ChapterItem(
+                manager=self,
+                text = i
+            )
             list_view.add_widget(item)
     
         self.change_screen('chapters')
-        return 
     
 class E(ExceptionHandler):
     def handle_exception(self, inst):
