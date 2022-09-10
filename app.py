@@ -2,6 +2,7 @@ __version__ = "0.3.0"
 
 from kivy.base import ExceptionHandler, ExceptionManager
 from kivy.config import Config
+from kivy.clock import Clock
 import sys
 from kivy.core.window import Window
 from kivy.utils import get_color_from_hex
@@ -55,7 +56,6 @@ class EduHive(MDApp):
         return Builder.load_file('kvs/app.kv')
 
     def on_start(self):
-        
         #TODO: add with loop
         for i in d.list_subject():
             self.root.ids.subjects.add_widget(SubjectItem(
@@ -73,8 +73,8 @@ class EduHive(MDApp):
 
     def list_section(self, chapter_name):
         list_view = self.root.ids.sub_chapter
-        for i in list_view.children:
-            list_view.remove_widget(i)
+        list_view.children=[]
+        list_view.canvas.clear()
         
         for i in d.list_section(chapter_name):
             i=i[0]
@@ -86,9 +86,14 @@ class EduHive(MDApp):
     def list_chapter(self, sub_name):
         # self.root.ids.subject_name.
         self.root.ids.subject_name.title = sub_name
+        self.root.ids.subject_name.font_name = self.bng_fnt
         d.select_subject(sub_name)
+        
         list_view = self.root.ids.container
-
+        
+        list_view.children=[]
+        list_view.canvas.clear()
+ 
         for i in d.list_all_chapter().index:
             item = ChapterItem(
                 manager=self,
