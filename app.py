@@ -69,35 +69,21 @@ class EduHive(MDApp):
         self.root.current = sc_name
 
     def list_section(self, chapter_name):
-        pass
+        print(chapter_name)
 
     def list_chapter(self, sub_name):
-        # fix it
-        # print(sub_name)
+        # self.root.ids.subject_name.
         self.root.ids.subject_name.title = sub_name
         d.select_subject(sub_name)
-
-        #TODO; cleat list
         list_view = self.root.ids.container
-        chapters = d.list_all_chapter()
-        if not d.paper_count():
-            # whatif already removed !!
-            # self.root.remove_widget(self.root.ids.)
-            for i in chapters.index:
-                item = OneLineRightIconListItem(text=i)
-                item.on_release = lambda x: self.list_section(i)
-                item.add_widget(IconRightWidget(icon='arrow-right'))
-                
-                list_view.add_widget(item)
-        else:
-            for i in chapters.index:
-                item = OneLineRightIconListItem(text=i)
-                item.on_release = lambda x: self.list_section(i)
-                item.add_widget(IconRightWidget(icon='arrow-right'))
-                
-                list_view.add_widget(item)
 
-
+        for i in d.list_all_chapter().index:
+            item = OneLineRightIconListItem(text=i)
+            item.on_release = lambda *x: self.list_section(item.text)
+            item.add_widget(IconRightWidget(icon='arrow-right'))
+            
+            list_view.add_widget(item)
+    
         self.change_screen('chapters')
         return 
     

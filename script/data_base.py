@@ -30,12 +30,12 @@ class DB:
         return insp.get_table_names()
 
     # @lru_cache()# need tk cache according to the subject
-    def list_paper(self):
+    def paper_count(self) -> int:
         # self.session.query(Lecture.chapter_name).distinct().count()
         stmt = select(distinct(self.table.c.paper))
         df = pb.read_sql_query(stmt, self.engine)
         # return df.values[0] and len(df) or 0
-        return df
+        return df.values[0][0]
     
     def list_all_chapter(self):
         '''
@@ -81,11 +81,13 @@ class DB:
 
 #%%
 if __name__=='__main__':
-    f="data/eduheive/hsc/hsc.db"
-    f="/home/kali/Desktop/coding/pyt/eduhive/data/eduheive/hsc/hsc.db"
+    f="data/eduheive/hsc.db"
+    f="/home/kali/Desktop/coding/pyt/eduhive/data/eduheive/hsc.db"
     d=DB(f)
-    d.select_subject('উচ্চতর গণিত')
-    p=d.list_listion('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
+    # d.select_subject('উচ্চতর গণিত')
+    d.select_subject('English Grammar')
+    p=d.list_paper()
+    # p=d.list_listion('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
     # print(hsc.list_listion("Discussion on Article"))
     print(p)
 
