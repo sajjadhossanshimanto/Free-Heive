@@ -86,7 +86,7 @@ class EduHive:
         subject_name = s['subject']['name']
         for subcp in s['sections']:
             p = pb.DataFrame.from_dict(subcp['contents'])
-            p = p[['title', 'vimeoId']]
+            p = p[['title', 'vimeoId', 'duration']]
 
             p['section_name']=subcp['name']
             p['chapter_name']=s['name']
@@ -110,7 +110,7 @@ class EduHive:
             c+=1
             print(c, end='\r')
 
-            content = self.get_content()
+            content = self._get_content()
             chapter_id = content.get('chapterId')
             if not chapter_id:
                 continue
@@ -131,7 +131,16 @@ class EduHive:
 
 f='data/eduheive/hsc/subjects.json'
 e=EduHive(f)
-e.pull_subject_by_name("রসায়ন")
+# p=e._get_content()
+
+sub = "English Grammar"
+sub = "উচ্চতর গণিত"
+sub = "জীববিজ্ঞান"
+sub = "তথ্য ও যোগাযোগ প্রযুক্তি"
+sub = "পদার্থবিজ্ঞান"
+sub = "রসায়ন"
+e.pull_subject_by_name(sub)
+
 # e.pull_all_subject()
 # p=EduHive.get_original_course("60b72b60e9358a41edd16416", '614ec4044d715908e178572d')
 
