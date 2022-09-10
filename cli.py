@@ -96,12 +96,13 @@ def get_user_response(msg, options):
 
 
 #%%
-data = 'data/eduheive/hsc/hsc.db'
+data = 'data/eduheive/hsc.db'
 # course_list = filter(lambda x: x.endswith('.db'), os.listdir(data))
 d = DB(data)
 
 while 1:
     p = get_user_response('chose a course', chain(d.list_subject(), ['exit']))
+    if p=='exit': sys.exit(0)
     d.select_subject(p)
     while 1:
         cp = get_user_response(
@@ -115,16 +116,16 @@ while 1:
                 'chose a listion',
                 chain(d.list_section(cp), ['back', 'exit'])
             )
-            if cp=='back': break
-            elif cp=='exit': sys.exit(0)
+            if sec=='back': break
+            elif sec=='exit': sys.exit(0)
             while 1:
                 lec=d.list_listion(sec[0])
                 title = get_user_response(
                     'chose a lecture',
                     chain(lec.index, ['back', 'exit'])
                 )
-                if cp=='back': break
-                elif cp=='exit': sys.exit(0)
+                if title=='back': break
+                elif title=='exit': sys.exit(0)
                 video_id = lec.loc[title][0]
                 
                 v = Vimeo(video_id)
@@ -134,12 +135,16 @@ while 1:
                     print('[!] internet not avqilable')
                     break
                 
-                q = get_user_response(
-                    'select a quality',
-                    v.content
-                )
-                print('[+]', v.content[q]['url'])
-                
+                while 1:
+                    q = get_user_response(
+                        'select a quality',
+                        chain(v.content, ['back', 'exit'])
+                    )
+                    if title=='back': break
+                    elif title=='exit': sys.exit(0)
+
+                    print('[+]\n', v.content[q]['url'], '\n')
+                    
 # %%
 {
     # subjects
