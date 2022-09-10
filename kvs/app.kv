@@ -1,0 +1,79 @@
+
+MDScreenManager:
+    id: display_screen
+
+
+    MDScreen:
+        name: "home_screen"
+        
+        MDBoxLayout:
+            orientation: "vertical"
+            md_bg_color: app.color_scheme['bg']
+
+            MDTopAppBar:
+                title: app.app_name
+
+            MDLabel:
+                text: "HSC"
+                size_hint_y: .05
+                halign: "center"
+            
+            # scroll video of cards
+            ScrollView:
+                MDGridLayout:
+                    id: subjects
+                    cols: 2
+                    spacing: "12dp"
+                    padding: "12dp"
+                    adaptive_height: True
+            
+
+    MDScreen:
+        name: "chapters"
+        
+        MDBoxLayout:
+            orientation: "vertical"
+            md_bg_color: app.color_scheme['bg']
+
+            MDTopAppBar:
+                id: subject_name
+                title: 'subject_name'
+                left_action_items: 
+                    [["arrow-left", lambda x: app.change_screen('home_screen')]]
+
+
+            # MDSegmentedControl:
+            #     id: paper_view
+            #     size_hint_y: 0.05
+
+            #     MDSegmentedControlItem:
+            #         id: paper1
+            #         text: "Paper 1"
+
+            #     MDSegmentedControlItem:
+            #         id: paper2
+            #         text: "Paper 2"
+
+            # MDBoxLayout:
+            MDScrollView:
+
+                MDList:
+                    id: container
+            
+                    OneLineRightIconListItem:
+                        text: "Single-line item with avatar"
+
+                        IconRightWidget:
+                            icon: 'arrow-right'
+                            # [["arrow-left", lambda x: app.change_screen('home_screen')]]
+            #            ImageRightWidget:
+    #                source: "kivymd/images/logo/kivymd-icon-256.png"
+
+    MDScreen:
+        name: "sections"
+
+        MDTopAppBar:
+            id: subject_name
+            title: 'subject_name'
+            left_action_items: [["arrow-left", lambda x: app.change_screen('chapters')]]
+
