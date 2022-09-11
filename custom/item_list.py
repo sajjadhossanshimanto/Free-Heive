@@ -1,6 +1,6 @@
 from kivy.animation import Animation
 from kivy.clock import Clock
-from kivymd.uix.list import OneLineListItem, OneLineRightIconListItem, IconRightWidget, MDList
+from kivymd.uix.list import OneLineListItem, IconLeftWidget, OneLineRightIconListItem, TwoLineAvatarIconListItem, IconRightWidget, MDList
 from kivy.properties import StringProperty, ObjectProperty
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivy.lang import Builder
@@ -76,4 +76,27 @@ class SectionItem(OneLineListItem):
 
     def on_release(self):
         return self.manager.list_video(self.text)
+
+
+
+KV = '''
+<VideoItem>
+    on_release: app.play_video(self.video_id)
+
+    IconLeftWidget:
+        icon: 'data/image/play.jpg'
+    
+'''
+Builder.load_string(KV)
+
+class VideoItem(TwoLineAvatarIconListItem):
+    #TODO: on_release: fetch info, update_thumblain, 
+    video_id = StringProperty()
+
+    def __init__(self, font_name, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.ids._lbl_primary.font_name = font_name
+        # self.add_widget(IconLeftWidget(
+            # source='data/image/play.jpg'
+        # ))
 

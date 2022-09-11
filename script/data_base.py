@@ -71,7 +71,7 @@ class DB:
         }
         '''
         stmt = select(
-            self.table.c.vimeoId, self.table.c.title
+            self.table.c.vimeoId, self.table.c.title, self.table.c.duration
         ).where(
             self.table.c.section_name==section_name
         )
@@ -88,6 +88,6 @@ if __name__=='__main__':
     d.select_subject('English Grammar')
     p=d.list_paper()
     # p=d.list_listion('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
-    # print(hsc.list_listion("Discussion on Article"))
+    print(d.list_listion("Discussion on Article"))
     print(p)
 

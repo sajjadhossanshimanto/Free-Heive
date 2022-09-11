@@ -11,9 +11,9 @@ from kivy.lang import Builder
 from kivymd.app import MDApp
 from kivymd.uix.label import MDLabel
 from kivymd.uix.toolbar.toolbar import MDTopAppBar
-from custom.item_list import SectionItem, SubjectItem, ChapterItem
+from custom.item_list import SectionItem, SubjectItem, ChapterItem, VideoItem
 from functools import partial
-from kivymd.uix.list import OneLineListItem
+from kivymd.uix.list import OneLineListItem, TwoLineAvatarIconListItem
 from script.data_base import DB
 
 try:
@@ -57,6 +57,16 @@ class EduHive(MDApp):
         return Builder.load_file('kvs/app.kv')
 
     def on_start(self):
+        # self.change_screen('video_screen')
+        self.root.ids.siver_bar.toolbar_cls = MDTopAppBar(
+            # title = "Headline medium"
+            left_action_items = [["arrow-left", lambda x: x]],
+            right_action_items = [
+                ["satellite-uplink", lambda x: x],
+            ]
+        )
+        # return
+
         self.root.ids.chapter_name.ids.label_title.font_name = self.bng_fnt
         self.root.ids.subject_name.ids.label_title.font_name = self.bng_fnt
 
@@ -71,9 +81,29 @@ class EduHive(MDApp):
     def change_screen(self, sc_name):
         self.root.current = sc_name
 
+    def play_video(self, video_id):
+        print(video_id)
+
     def list_video(self, section_name):
-        # d.list_listion(section_name)
-        print(section_name)
+        # TODO; clear thumblain, 
+        list_view = self.root.ids.video_list
+        list_view.children=[]
+        list_view.canvas.clear()
+
+        videos=d.list_listion(section_name)
+        for name in videos.index:
+            video_id, duration = videos.loc[name]
+            item = VideoItem(
+                text = name,
+                font_name = self.bng_fnt,
+                secondary_text = f"{duration} Min",
+                video_id = str(video_id)
+            )
+
+            list_view.add_widget(item)
+
+        self.change_screen('video_screen')
+
 
     def list_section(self, chapter_name):
         self.root.ids.chapter_name.title = chapter_name

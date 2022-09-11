@@ -62,3 +62,32 @@ MDScreenManager:
                 MDList:
                     id: sub_chapter
 
+
+    MDScreen:
+        name: "video_screen"
+
+        MDSliverAppbar:
+            id: siver_bar
+            background_color: "2d4a50"
+            # toolbar_cls: SliverToolbar()
+
+            MDSliverAppbarHeader:
+
+                MDRelativeLayout:
+
+                    FitImage:
+                        id: thumblain
+                        source: "avatar.jpg"
+                    
+                    IconRightWidget:
+                        # pop up manue for selecting video quality
+                        icon: "satellite-uplink"
+
+            MDSliverAppbarContent:
+                id: video_list
+                md_bg_color: app.color_scheme['bg']
+
+                orientation: "vertical"
+                padding: "12dp"
+                spacing: "12dp"
+                adaptive_height: True
