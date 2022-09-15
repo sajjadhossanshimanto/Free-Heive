@@ -140,11 +140,11 @@ while 1:
                         'select a quality',
                         chain(v.content, ['back', 'exit'])
                     )
-                    if title=='back': break
-                    elif title=='exit': sys.exit(0)
+                    if q=='back': break
+                    elif q=='exit': sys.exit(0)
 
-                    print('[+]\n', v.content[q]['url'], '\n')
-                    
+                    print('[+]', v.content[q]['url'], sep='\n')
+
 # %%
 {
     # subjects
