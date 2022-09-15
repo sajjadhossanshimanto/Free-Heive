@@ -6,12 +6,13 @@ from kivy.clock import Clock
 import sys
 from kivy.core.window import Window
 from kivy.utils import get_color_from_hex
-
+from script.vimeo import Vimeo
 from kivy.lang import Builder
 from kivymd.app import MDApp
 from kivymd.uix.label import MDLabel
+from kivymd.uix.dialog import MDDialog
 from kivymd.uix.toolbar.toolbar import MDTopAppBar
-from custom.item_list import SectionItem, SubjectItem, ChapterItem, VideoItem
+from custom.item_list import SectionItem, SubjectItem, ChapterItem, VideoItem, QuelityItem
 from functools import partial
 from kivymd.uix.list import OneLineListItem, TwoLineAvatarIconListItem
 from script.data_base import DB
@@ -75,8 +76,40 @@ class EduHive(MDApp):
     def change_screen(self, sc_name):
         self.root.current = sc_name
 
-    def play_video(self, video_id):
-        print(video_id)
+    def forward_link(self, link):
+        print(link)
+
+    def play_video(self, video_id='622338938'):
+        v = Vimeo(video_id)
+
+        items = [
+            QuelityItem(text=str(t), link=l) 
+            for t, l in v.get_quality().items()
+        ]
+        MDDialog(
+            title="Select Quality",
+            type="simple",
+            items=items
+        ).open()
+            
+    def mplay_video(self, video_id='622338938'):
+        # v = Vimeo(video_id)
+        
+        # items=[
+        #     QuelityItem(text='1', link=l)
+        #     for t, l in v.get_quality().items()
+        # ]
+        self.dia = MDDialog(
+            title="Select Quality",
+            # type="simple",
+            # type="simple",
+            items=[
+                # Item(text=str(i), link='llll') 
+                QuelityItem(text=str(i), link='llll') 
+                for i in range(3)
+            ],
+        )
+        self.dia.open()
 
     def list_video(self, section_name):
         # TODO; clear thumblain, 

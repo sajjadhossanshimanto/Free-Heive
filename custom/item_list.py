@@ -1,6 +1,6 @@
 from kivy.animation import Animation
 from kivy.clock import Clock
-from kivymd.uix.list import OneLineListItem, IconLeftWidget, OneLineRightIconListItem, TwoLineAvatarIconListItem, IconRightWidget, MDList
+from kivymd.uix.list import OneLineListItem, OneLineAvatarListItem, IconLeftWidget, OneLineRightIconListItem, TwoLineAvatarIconListItem, IconRightWidget, MDList
 from kivy.properties import StringProperty, ObjectProperty
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivy.lang import Builder
@@ -103,4 +103,18 @@ class VideoItem(TwoLineAvatarIconListItem, RoundedRectangularElevationBehavior):
         # self.add_widget(IconLeftWidget(
             # source='data/image/play.jpg'
         # ))
+
+
+KV = '''
+<QuelityItem>
+    on_release: app.forward_link(self.link)
+
+    # IconRightWidget:
+    #     icon: "satellite-uplink"
+
+'''
+Builder.load_string(KV)
+
+class QuelityItem(OneLineAvatarListItem):
+    link = StringProperty()
 
