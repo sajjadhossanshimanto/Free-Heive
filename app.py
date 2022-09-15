@@ -91,25 +91,6 @@ class EduHive(MDApp):
             type="simple",
             items=items
         ).open()
-            
-    def mplay_video(self, video_id='622338938'):
-        # v = Vimeo(video_id)
-        
-        # items=[
-        #     QuelityItem(text='1', link=l)
-        #     for t, l in v.get_quality().items()
-        # ]
-        self.dia = MDDialog(
-            title="Select Quality",
-            # type="simple",
-            # type="simple",
-            items=[
-                # Item(text=str(i), link='llll') 
-                QuelityItem(text=str(i), link='llll') 
-                for i in range(3)
-            ],
-        )
-        self.dia.open()
 
     def list_video(self, section_name):
         # TODO; clear thumblain, 
