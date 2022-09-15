@@ -52,20 +52,23 @@ class EduHive(MDApp):
     }
 
     def build(self):
-        self.theme_cls.theme_style = "Dark"
+        # self.theme_cls.theme_style = "Dark"
 
         return Builder.load_file('kvs/app.kv')
 
     def on_start(self):
-        # self.change_screen('video_screen')
-        self.root.ids.siver_bar.toolbar_cls = MDTopAppBar(
-            # title = "Headline medium"
-            left_action_items = [["arrow-left", lambda x: x]],
-            right_action_items = [
-                ["satellite-uplink", lambda x: x],
-            ]
-        )
-        # return
+        self.change_screen('video_screen')
+        # self.root.ids.siver_bar.toolbar_cls = MDTopAppBar(
+        #     type_height = "medium",
+        #     title = "Headline medium",
+        #     left_action_items = [["arrow-left", lambda x: self.change_screen('sections')]],
+        #     right_action_items = [
+        #         ["satellite-uplink", lambda x: x],
+        #     ]
+        # )
+        d.select_subject('উচ্চতর গণিত')
+        self.list_video('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
+        return
 
         self.root.ids.chapter_name.ids.label_title.font_name = self.bng_fnt
         self.root.ids.subject_name.ids.label_title.font_name = self.bng_fnt

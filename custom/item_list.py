@@ -4,6 +4,7 @@ from kivymd.uix.list import OneLineListItem, IconLeftWidget, OneLineRightIconLis
 from kivy.properties import StringProperty, ObjectProperty
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivy.lang import Builder
+from kivymd.uix.behaviors import RoundedRectangularElevationBehavior
 
 
 KV = '''
@@ -89,7 +90,7 @@ KV = '''
 '''
 Builder.load_string(KV)
 
-class VideoItem(TwoLineAvatarIconListItem):
+class VideoItem(TwoLineAvatarIconListItem, RoundedRectangularElevationBehavior):
     #TODO: on_release: fetch info, update_thumblain, 
     video_id = StringProperty()
 
