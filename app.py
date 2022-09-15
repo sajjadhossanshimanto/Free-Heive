@@ -19,6 +19,8 @@ from script.data_base import DB
 
 try:
     import android
+    from jnius import autoclass
+    from plyer.platforms.android import activity
 except ImportError:
     android = None
 
@@ -58,9 +60,9 @@ class EduHive(MDApp):
         return Builder.load_file('kvs/app.kv')
 
     def on_start(self):
-        d.select_subject('উচ্চতর গণিত')
-        self.list_video('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
-        return
+        # d.select_subject('উচ্চতর গণিত')
+        # self.list_video('অনুশীলনী ১.১ঃ ম্যাট্রিক্স')
+        # return
 
         self.root.ids.chapter_name.ids.label_title.font_name = self.bng_fnt
         self.root.ids.subject_name.ids.label_title.font_name = self.bng_fnt
@@ -76,8 +78,19 @@ class EduHive(MDApp):
     def change_screen(self, sc_name):
         self.root.current = sc_name
 
-    def forward_link(self, link):
-        print(link)
+    def forward_link(self, url):
+        if not android:
+            print(url)
+            return 
+
+        Intent = autoclass('android.content.Intent')
+        Uri = autoclass('android.net.Uri')
+
+        intent = Intent()
+        intent.setAction(Intent.ACTION_VIEW)
+        intent.setData(Uri.parse(url))
+
+        activity.startActivity(intent)
 
     def play_video(self, video_id='622338938'):
         v = Vimeo(video_id)
