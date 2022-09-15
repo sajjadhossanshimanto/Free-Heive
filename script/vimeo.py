@@ -22,7 +22,9 @@ class Vimeo:
 
     def __init__(self, vimeo_id) -> None:
         self.vimeo_id = int(vimeo_id)
-        self.content = None
+        self.content: dict = None
+        if cache.get(self.vimeo_id):
+            self.content = cache[self.vimeo_id]
 
     def embed_link(self):
         payload={
@@ -49,9 +51,10 @@ class Vimeo:
         
         config = json.loads(r)
         self.content = {
-            i['quality']:i
+            i['quality']:i['url']
             for i in config['request']["files"]['progressive']
         }
+        cache[self.vimeo_id]=self.content
         return self.content
 
     def download(self, quality):
