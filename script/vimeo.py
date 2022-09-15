@@ -1,8 +1,9 @@
 #%%
 import re
+from time import time
 import requests
 import json
-
+from urllib.parse import urlparse, unquote
 
 #%%
 # url = "https://vimeo.com/api/oembed.json?url=https%3A%2F%2Fvimeo.com%2F622338938"
@@ -40,7 +41,11 @@ class Vimeo:
 
     def get_quality(self):
         if self.content:
-            return self.content
+            for k in self.content: break
+            url = self.content[k]
+            exp = re.search('exp=(\d+)', url).group(1)
+            if int(exp)>time():
+                return self.content
         
         url = self.embed_link()
         r = requests.request("GET", url, headers=headers)
@@ -57,6 +62,11 @@ class Vimeo:
         cache[self.vimeo_id]=self.content
         return self.content
 
+    def refresh_link(self):
+        ''' forcefully refresh links '''
+        self.content.clear()
+        self.get_quality()
+
     def download(self, quality):
         pass
 
@@ -67,3 +77,12 @@ if __name__=='__main__':
     print(p.player())
 
 
+{
+    1:1,
+    2:2,
+    3:3
+}.popitem()
+
+url="https://vod-progressive.akamaized.net/exp=1661480862~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4467%2F24%2F622338938%2F2880029581.mp4~hmac=fb6a2b60a8276046d8a9ae6dc046ba69deed826a43abe50481f3b08036c36607/vimeo-prod-skyfire-std-us/01/4467/24/622338938/2880029581.mp4"
+
+# %%
