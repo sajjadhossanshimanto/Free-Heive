@@ -5,6 +5,7 @@ from script.data_base import DB
 from script.vimeo import Vimeo
 import os
 import shutil
+from pyperclip import copy
 
 
 #%%
@@ -143,7 +144,10 @@ while 1:
                     if q=='back': break
                     elif q=='exit': sys.exit(0)
 
-                    print('[+]', v.content[q]['url'], sep='\n')
+                    link = v.content[q]
+                    print('[+]', link, sep='\n')
+                    copy(link)
+                    print('[+] link copied to the clipboard')
 
 # %%
 {
