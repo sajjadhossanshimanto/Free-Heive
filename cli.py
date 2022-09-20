@@ -95,6 +95,19 @@ def get_user_response(msg, options):
 
     return response
 
+def loop_view(option:list, to_do, msg='chose a option'):
+    while 1:
+        inp = get_user_response(
+            
+            chain(['exit', 'back'], option)
+        )
+        if inp=='back': return
+        elif inp=='exit': sys.exit(0)
+    
+    to_do(inp)
+
+def download_video(title):
+    pass
 
 #%%
 data = 'data/eduheive/hsc.db'
@@ -105,49 +118,48 @@ while 1:
     p = get_user_response('chose a course', chain(d.list_subject(), ['exit']))
     if p=='exit': sys.exit(0)
     d.select_subject(p)
-    while 1:
-        cp = get_user_response(
-            'chose a chapter',
-            chain(d.list_all_chapter().index, ['back', 'exit'])
-        )
-        if cp=='back': break
-        elif cp=='exit': sys.exit(0)
-        while 1:
-            sec = get_user_response(
-                'chose a listion',
-                chain(d.list_section(cp), ['back', 'exit'])
-            )
-            if sec=='back': break
-            elif sec=='exit': sys.exit(0)
-            while 1:
-                lec=d.list_listion(sec[0])
-                title = get_user_response(
-                    'chose a lecture',
-                    chain(lec.index, ['back', 'exit'])
-                )
-                if title=='back': break
-                elif title=='exit': sys.exit(0)
-                video_id = lec.loc[title][0]
-                
-                v = Vimeo(video_id)
-                try:
-                    v.get_quality()
-                except ConnectionError:
-                    print('[!] internet not avqilable')
-                    break
-                
-                while 1:
-                    q = get_user_response(
-                        'select a quality',
-                        chain(v.content, ['back', 'exit'])
-                    )
-                    if q=='back': break
-                    elif q=='exit': sys.exit(0)
 
-                    link = v.content[q]
-                    print('[+]', link, sep='\n')
-                    copy(link)
-                    print('[+] link copied to the clipboard')
+    loop_view(
+        d.list_all_chapter().index,
+        lambda cp: loop_view(
+            d.list_section(cp),
+            lambda sec: loop_view(
+                d.list_listion(sec[0]).index,
+                download_video
+            )
+        )
+    )
+    # while 1:
+    #     sec = get_user_response(
+    #         d.list_section(cp),
+    #         #TODO:
+    #     )
+    #     while 1:
+    #         lec=d.list_listion(sec[0])
+
+    #         title = get_user_response(
+    #             lec.index,
+    #             #TODO:
+    #         )
+
+            # video_id = lec.loc[title][0]
+            # v = Vimeo(video_id)
+            # try:
+            #     v.get_quality()
+            # except ConnectionError:
+            #     print('[!] internet not avqilable')
+            #     break
+            
+            # while 1:
+            #     q = get_user_response(
+            #         v.content,
+            #         #TODO:
+            #     )
+
+            #     link = v.content[q]
+            #     print('[+]', link, sep='\n')
+            #     copy(link)
+            #     print('[+] link copied to the clipboard')
 
 # %%
 {
