@@ -40,7 +40,7 @@ def get_user_response(msg, options):
 
     """
     # map options to numbers starting from 1
-    options_map = {i + 1: x for i, x in enumerate(options)}
+    options_map = {i: x for i, x in enumerate(options)}
 
     # split message to list of lines
     msg_lines = msg.split('\n')
