@@ -84,11 +84,9 @@ KV = '''
 <VideoItem>
     on_release: app.play_video(self.video_id)
 
-    IconLeftWidget:
-        icon: "plus"
+    ImageLeftWidget:
+        source: "data/image/play.png"
 
-    IconRightWidget:
-        icon: "minus"
 
 '''
 Builder.load_string(KV)

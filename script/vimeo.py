@@ -3,7 +3,7 @@ import re
 from time import time
 import requests
 import json
-from urllib.parse import urlparse, unquote
+
 
 #%%
 # url = "https://vimeo.com/api/oembed.json?url=https%3A%2F%2Fvimeo.com%2F622338938"
@@ -23,6 +23,7 @@ class Vimeo:
 
     def __init__(self, vimeo_id) -> None:
         self.vimeo_id = int(vimeo_id)
+        # never directly call self.content until you know what you are doing
         self.content: dict = None
         if cache.get(self.vimeo_id):
             self.content = cache[self.vimeo_id]

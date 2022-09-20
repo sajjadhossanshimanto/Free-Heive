@@ -2,19 +2,14 @@ __version__ = "0.3.0"
 
 from kivy.base import ExceptionHandler, ExceptionManager
 from kivy.config import Config
-from kivy.clock import Clock
 import sys
 from kivy.core.window import Window
 from kivy.utils import get_color_from_hex
 from script.vimeo import Vimeo
 from kivy.lang import Builder
 from kivymd.app import MDApp
-from kivymd.uix.label import MDLabel
 from kivymd.uix.dialog import MDDialog
-from kivymd.uix.toolbar.toolbar import MDTopAppBar
 from custom.item_list import SectionItem, SubjectItem, ChapterItem, VideoItem, QuelityItem
-from functools import partial
-from kivymd.uix.list import OneLineListItem, TwoLineAvatarIconListItem
 from script.data_base import DB
 
 try:
@@ -45,7 +40,7 @@ excepthook=None
 
 d = DB('data/eduheive/hsc.db')
 class EduHive(MDApp):
-    bng_fnt = 'font/NotoSerifBengla.ttf'
+    bng_fnt = 'data/font/NotoSerifBengla.ttf'
     app_name = 'Free Hive'
     color_scheme = {
         "bg": get_color_from_hex('#282F37'),# 91% black
@@ -66,12 +61,13 @@ class EduHive(MDApp):
 
         self.root.ids.chapter_name.ids.label_title.font_name = self.bng_fnt
         self.root.ids.subject_name.ids.label_title.font_name = self.bng_fnt
+        self.root.ids.section_name.ids.label_title.font_name = self.bng_fnt
 
         for i in d.list_subject():
             self.root.ids.subjects.add_widget(SubjectItem(
                 title=i,
                 font_name=self.bng_fnt,
-                img='data/image/bio.img',
+                img=f'data/image/{i}.jpg',
                 manager=self
             ))
 

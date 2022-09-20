@@ -1,5 +1,4 @@
 #%%
-from numpy import ndarray as array
 from sqlalchemy import create_engine, select, Table, MetaData
 from sqlalchemy import inspect
 from sqlalchemy import distinct
@@ -55,7 +54,7 @@ class DB:
         df = pb.read_sql_query(stmt, self.engine)
         return df
     
-    def list_section(self, chapter_name:str) -> array:
+    def list_section(self, chapter_name:str):
         stmt = select(
             distinct(self.table.c.section_name)
         ).where(
