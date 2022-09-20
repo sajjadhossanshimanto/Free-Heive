@@ -36,6 +36,12 @@ if not FROZEN:
 Config.set('graphics', 'resizable', 1)
 excepthook=None
 
+def log(title, text):
+    MDDialog(
+        title=title,
+        type="simple",
+        text=text
+    ).open()
 
 
 d = DB('data/eduheive/hsc.db')
@@ -72,6 +78,7 @@ class EduHive(MDApp):
             ))
 
     def change_screen(self, sc_name):
+        # TODO: show loading process, change scrren before loading widget
         self.root.current = sc_name
 
     def forward_link(self, url):
@@ -88,9 +95,12 @@ class EduHive(MDApp):
 
         activity.startActivity(intent)
 
-    def play_video(self, video_id='622338938'):
+    def play_video(self, video_id):# '622338938'
+        if not video_id.isdecimal():
+            log('Info', 'sorry this item is not playable')
+            return
+        
         v = Vimeo(video_id)
-
         items = [
             QuelityItem(text=str(t), link=l) 
             for t, l in v.get_quality().items()
@@ -103,6 +113,8 @@ class EduHive(MDApp):
 
     def list_video(self, section_name):
         # TODO; clear thumblain, 
+        self.root.ids.section_name.title = section_name
+
         list_view = self.root.ids.video_list
         list_view.children=[]
         list_view.canvas.clear()
@@ -154,13 +166,13 @@ class EduHive(MDApp):
             list_view.add_widget(item)
     
         self.change_screen('chapters')
-    
+
 class E(ExceptionHandler):
     def handle_exception(self, inst):
         if not FROZEN:
             return ExceptionManager.RAISE
         
-        excepthook()
+        log('ERROR', str(type(inst)))
         return ExceptionManager.PASS
 
 ExceptionManager.add_handler(E())
