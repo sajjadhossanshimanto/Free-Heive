@@ -33,8 +33,8 @@ def get_user_response(msg, options):
     * Do you want to overwrite file?          *
     * --------------------------------------- *
     * Options:                                *
-    *   1: Overwrite                          *
-    *   2: Cancel download                    *
+    *   0: Overwrite                          *
+    *   1: Cancel download                    *
     *******************************************
     Select Option Number: 
 
@@ -108,14 +108,14 @@ while 1:
     while 1:
         cp = get_user_response(
             'chose a chapter',
-            chain(d.list_all_chapter().index, ['back', 'exit'])
+            chain(['exit', 'back'], d.list_all_chapter().index)
         )
         if cp=='back': break
         elif cp=='exit': sys.exit(0)
         while 1:
             sec = get_user_response(
                 'chose a listion',
-                chain(d.list_section(cp), ['back', 'exit'])
+                chain(['exit', 'back'], d.list_section(cp))
             )
             if sec=='back': break
             elif sec=='exit': sys.exit(0)
@@ -123,7 +123,7 @@ while 1:
                 lec=d.list_listion(sec[0])
                 title = get_user_response(
                     'chose a lecture',
-                    chain(lec.index, ['back', 'exit'])
+                    chain(['exit', 'back', 'all'], lec.index)
                 )
                 if title=='back': break
                 elif title=='exit': sys.exit(0)
@@ -139,7 +139,7 @@ while 1:
                 while 1:
                     q = get_user_response(
                         'select a quality',
-                        chain(v.content, ['back', 'exit'])
+                        chain(['exit', 'back'], content)
                     )
                     if q=='back': break
                     elif q=='exit': sys.exit(0)
