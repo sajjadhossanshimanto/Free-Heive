@@ -75,15 +75,7 @@ class Vimeo:
 if __name__=='__main__':
     vimeo_id = 622338938
     p=Vimeo(vimeo_id)
-    print(p.player())
+    print(p.get_quality())
 
-
-{
-    1:1,
-    2:2,
-    3:3
-}.popitem()
-
-url="https://vod-progressive.akamaized.net/exp=1661480862~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4467%2F24%2F622338938%2F2880029581.mp4~hmac=fb6a2b60a8276046d8a9ae6dc046ba69deed826a43abe50481f3b08036c36607/vimeo-prod-skyfire-std-us/01/4467/24/622338938/2880029581.mp4"
 
 # %%

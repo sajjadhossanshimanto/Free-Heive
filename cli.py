@@ -5,8 +5,18 @@ from script.data_base import DB
 from script.vimeo import Vimeo
 import os
 import shutil
-from pyperclip import copy
+from pyperclip import copy, paste
 
+
+try:
+    paste()
+except:
+    def copy(s):
+        os.system('clear')
+        print('\n\n')
+        print(s)
+        print('\n\n')
+        input(...)
 
 #%%
 def get_terminal_size():
@@ -95,6 +105,29 @@ def get_user_response(msg, options):
 
     return response
 
+def video_content(lec, title):
+    video_id = lec.loc[title][0]
+    v = Vimeo(video_id)
+
+    try:
+        v.get_quality()
+    except ConnectionError:
+        print('[!] internet not avqilable')
+        return
+    
+    if '540p' in v.content:
+        q='540p'
+    elif '360p' in v.content:
+        q='360p'
+    
+    link = v.content[q]
+    print('[#]', link, sep='\n')
+    copy(link)
+    print('[+] link copied to the clipboard')
+    inp = input('[+] press Enter to copy title...')
+    if inp=='e': return 1
+    copy(title)
+
 
 #%%
 data = 'data/eduheive/hsc.db'
@@ -127,27 +160,12 @@ while 1:
                 )
                 if title=='back': break
                 elif title=='exit': sys.exit(0)
-                video_id = lec.loc[title][0]
-                
-                v = Vimeo(video_id)
-                try:
-                    v.get_quality()
-                except ConnectionError:
-                    print('[!] internet not avqilable')
-                    break
-                
-                while 1:
-                    q = get_user_response(
-                        'select a quality',
-                        chain(['exit', 'back'], content)
-                    )
-                    if q=='back': break
-                    elif q=='exit': sys.exit(0)
+                elif title=='all':
+                    for title in lec.index:
+                        if video_content(lec, title): break
+                else:
+                    video_content(lec, title)
 
-                    link = v.content[q]
-                    print('[+]', link, sep='\n')
-                    copy(link)
-                    print('[+] link copied to the clipboard')
 
 # %%
 {
