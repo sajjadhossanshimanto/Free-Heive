@@ -51,7 +51,7 @@ class Vimeo:
         url = self.embed_link()
         r = requests.request("GET", url, headers=headers)
         r = re.search(
-            r" var config = (.+?); if \(!config",
+            r"playerConfig = (.+?); var",
             r.text
         ).group(1)
         
