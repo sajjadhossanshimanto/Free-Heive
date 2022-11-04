@@ -86,6 +86,7 @@ class EduHive:
         subject_name = s['subject']['name']
         for subcp in s['sections']:
             p = pb.DataFrame.from_dict(subcp['contents'])
+            # TODO: filter "contentType": "video",
             p = p[['title', 'vimeoId', 'duration']]
 
             p['section_name']=subcp['name']

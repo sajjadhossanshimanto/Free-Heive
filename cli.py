@@ -6,6 +6,10 @@ from script.vimeo import Vimeo
 import os
 import shutil
 from pyperclip import copy, paste
+import IPython.core.ultratb
+
+# Also ColorTB, FormattedTB, ListTB, SyntaxTB
+sys.excepthook = IPython.core.ultratb.VerboseTB(color_scheme='Linux')  # Other colors: NoColor, LightBG, Neutral
 
 
 try:
