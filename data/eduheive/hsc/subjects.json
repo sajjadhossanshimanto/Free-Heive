@@ -1,0 +1,746 @@
+[
+    {
+        "paperCount": 1,
+        "status": "active",
+        "videoEnabled": true,
+        "deleted": false,
+        "_id": "5e08af34b67aac18be04d77a",
+        "name": "English Grammar",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811669619_bangla%20copy-100.jpg",
+        "createdAt": "2019-12-29T13:50:44.540Z",
+        "__v": 11,
+        "lastUpdatedAt": "2021-12-12T10:15:14.226Z",
+        "lastUpdatedBy": "5f7d58db31139571d0fcb9b4",
+        "chapters": [
+            {
+                "status": "active",
+                "_id": "619e05f393e9cd05cc5a6e13",
+                "name": "Articles",
+                "lessonsCount": 5
+            },
+            {
+                "status": "inactive",
+                "_id": "619e077793e9cd05cc5a828a",
+                "name": "Prepositions",
+                "lessonsCount": 3
+            },
+            {
+                "status": "active",
+                "_id": "619e077793e9cd05cc5a828b",
+                "name": "Using Phrases",
+                "lessonsCount": 22
+            },
+            {
+                "status": "active",
+                "_id": "619e077793e9cd05cc5a828c",
+                "name": "Completing Sentences",
+                "lessonsCount": 24
+            },
+            {
+                "status": "active",
+                "_id": "619e077793e9cd05cc5a828d",
+                "name": "Right Form of Verbs",
+                "lessonsCount": 7
+            },
+            {
+                "status": "active",
+                "_id": "619e077793e9cd05cc5a828e",
+                "name": "Changing Sentences",
+                "lessonsCount": 20
+            },
+            {
+                "status": "active",
+                "_id": "619e077793e9cd05cc5a828f",
+                "name": "Narration",
+                "lessonsCount": 10
+            },
+            {
+                "status": "inactive",
+                "_id": "619e077793e9cd05cc5a8290",
+                "name": "Pronoun Refference",
+                "lessonsCount": 3
+            },
+            {
+                "status": "active",
+                "_id": "619e077793e9cd05cc5a8291",
+                "name": "Modifier",
+                "lessonsCount": 9
+            },
+            {
+                "status": "active",
+                "_id": "619e077793e9cd05cc5a8292",
+                "name": "Sentence Connectors",
+                "lessonsCount": 3
+            },
+            {
+                "status": "inactive",
+                "_id": "619e077793e9cd05cc5a8293",
+                "name": "Synonym & Antonym",
+                "lessonsCount": 3
+            },
+            {
+                "status": "inactive",
+                "_id": "619e077793e9cd05cc5a8294",
+                "name": "Punctuation",
+                "lessonsCount": 3
+            }
+        ],
+        "className": "hsc",
+        "group": "all",
+        "order": 6
+    },
+    {
+        "paperCount": 1,
+        "status": "active",
+        "videoEnabled": true,
+        "deleted": false,
+        "_id": "60b7322ae9358a41edd165c7",
+        "name": "উচ্চতর গণিত",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811472593_HM.jpg",
+        "chapters": [
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165c8",
+                "name": "অধ্যায় ১: ম্যাট্রিক্স ও নির্ণায়ক",
+                "paper": 1,
+                "lessonsCount": 22
+            },
+            {
+                "status": "inactive",
+                "_id": "60b7322ae9358a41edd165c9",
+                "name": "অধ্যায় ২: ভেক্টর",
+                "paper": 1,
+                "lessonsCount": 23
+            },
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165ca",
+                "name": "অধ্যায় ৩: সরলরেখা ",
+                "paper": 1,
+                "lessonsCount": 72
+            },
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165cb",
+                "name": "অধ্যায় ৪: বৃত্ত",
+                "paper": 1,
+                "lessonsCount": 35
+            },
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165cc",
+                "name": "অধ্যায় ৫: বিন্যাস ও সমাবেশ",
+                "paper": 1,
+                "lessonsCount": 36
+            },
+            {
+                "status": "inactive",
+                "_id": "60b7322ae9358a41edd165cd",
+                "name": "অধ্যায় ৬: ত্রিকোণমিতিক অনুপাত",
+                "paper": 1,
+                "lessonsCount": 15
+            },
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165ce",
+                "name": "অধ্যায় ৭: সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত",
+                "paper": 1,
+                "lessonsCount": 64
+            },
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165cf",
+                "name": "অধ্যায় ৮: ফাংশন ও ফাংশনের লেখচিত্র",
+                "paper": 1,
+                "lessonsCount": 61
+            },
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165d0",
+                "name": "অধ্যায় ৯: অন্তরীকরণ",
+                "paper": 1,
+                "lessonsCount": 50
+            },
+            {
+                "status": "active",
+                "_id": "60b7322ae9358a41edd165d1",
+                "name": "অধ্যায় ১০ঃ যোগজীকরণ",
+                "paper": 1,
+                "lessonsCount": 42
+            }
+        ],
+        "className": "hsc",
+        "createdAt": "2021-06-02T07:24:26.887Z",
+        "__v": 19,
+        "lastUpdatedAt": "2022-06-14T12:40:16.144Z",
+        "lastUpdatedBy": "62a877418db0af203d86dfb9",
+        "group": "science",
+        "order": 3
+    },
+    {
+        "paperCount": 2,
+        "status": "active",
+        "videoEnabled": true,
+        "deleted": false,
+        "_id": "60b72b60e9358a41edd16416",
+        "name": "জীববিজ্ঞান",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811716590_ICT%20copy%203-100.jpg",
+        "chapters": [
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e178572d",
+                "name": "অধ্যায় ১: কোষ ও এর গঠন",
+                "paper": 1,
+                "lessonsCount": 22
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e178572e",
+                "name": "অধ্যায় ২: কোষ বিভাজন ",
+                "paper": 1,
+                "lessonsCount": 11
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e178572f",
+                "name": "অধ্যায় ৩:কোষ রসায়ন ",
+                "paper": 1,
+                "lessonsCount": 17
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785730",
+                "name": "অধ্যায় ৪: অনুজীব",
+                "paper": 1,
+                "lessonsCount": 70
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785731",
+                "name": "অধ্যায় ৫: শৈবাল ও ছত্রাক ",
+                "paper": 1,
+                "lessonsCount": 54
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785732",
+                "name": "অধ্যায় ৬: ব্রায়োফাইটা ও টেরিডোফাইটা ",
+                "paper": 1,
+                "lessonsCount": 23
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785733",
+                "name": "অধ্যায় ৭: নগ্নবীজী ও আবৃতবীজী উদ্ভিদ ",
+                "paper": 1,
+                "lessonsCount": 16
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785734",
+                "name": "অধ্যায় ৮: টিস্যু ও টিস্যুতন্ত্র ",
+                "paper": 1,
+                "lessonsCount": 16
+            },
+            {
+                "status": "active",
+                "_id": "61d95a8999a013444f3f72f3",
+                "name": "অধ্যায় ৯: উদ্ভিদ শারীরতত্ব",
+                "paper": 1,
+                "lessonsCount": 39
+            },
+            {
+                "status": "active",
+                "_id": "61e4f150950f095820708da0",
+                "name": "অধ্যায় ১০: উদ্ভিদ প্রজনন",
+                "lessonsCount": 16,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "61f7862833f1410876a35612",
+                "name": "অধ্যায় ১১: জীব প্রযুক্তি",
+                "paper": 1,
+                "lessonsCount": 38
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785735",
+                "name": "অধ্যায় ১: প্রাণীর বিভিন্নতা ও শ্রেণীবিন্যাস  ",
+                "paper": 2,
+                "lessonsCount": 24
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785736",
+                "name": "অধ্যায় ২: প্রাণীর পরিচিতি ",
+                "paper": 2,
+                "lessonsCount": 38
+            },
+            {
+                "status": "active",
+                "_id": "61e92e84b8cb1974cf8e386d",
+                "name": "অধ্যায় ৩: পরিপাক ",
+                "lessonsCount": 36,
+                "paper": 2
+            },
+            {
+                "status": "active",
+                "_id": "614ec4044d715908e1785738",
+                "name": "অধ্যায় ৪: রক্ত ও সঞ্চালন ",
+                "paper": 2,
+                "lessonsCount": 45
+            },
+            {
+                "status": "inactive",
+                "_id": "614ec4044d715908e1785739",
+                "name": "অধ্যায় ৫: শ্বসন ও শ্বাসক্রিয়া ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "614ec4044d715908e178573a",
+                "name": "অধ্যায় ৬: রেচনতন্ত্র ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "614ec4044d715908e178573b",
+                "name": "অধ্যায় ৭: চলন ও অঙ্গচালনা ",
+                "paper": 2
+            },
+            {
+                "status": "active",
+                "_id": "62a9a1f41b0cba45da09daf4",
+                "name": "অধ্যায় ৮: সমন্বয় ও নিয়ন্ত্রন",
+                "lessonsCount": 57,
+                "paper": 2
+            },
+            {
+                "status": "active",
+                "_id": "62f4aab024475849dffabc3a",
+                "name": "অধ্যায় ৯: মানব জীবনের ধারাবাহিকতা",
+                "paper": 2,
+                "lessonsCount": 43
+            }
+        ],
+        "className": "hsc",
+        "createdAt": "2021-06-02T06:55:28.494Z",
+        "__v": 61,
+        "lastUpdatedAt": "2022-08-16T07:49:26.032Z",
+        "lastUpdatedBy": "5f7d58db31139571d0fcb9b4",
+        "group": "science",
+        "order": 4
+    },
+    {
+        "paperCount": 1,
+        "status": "active",
+        "videoEnabled": true,
+        "deleted": false,
+        "_id": "60b72a14e9358a41edd163b4",
+        "name": "তথ্য ও যোগাযোগ প্রযুক্তি",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811751150_English%20copy-100.jpg",
+        "chapters": [
+            {
+                "status": "active",
+                "_id": "60b72a14e9358a41edd163b5",
+                "name": "অধ্যায় ১: বিশ্ব ও বাংলাদেশ প্রেক্ষিত",
+                "lessonsCount": 22
+            },
+            {
+                "status": "active",
+                "_id": "60b72a64e9358a41edd163b9",
+                "name": "অধ্যায় ২: কমিউনিকেশন সিস্টেম ও নেটওয়ারকিং",
+                "lessonsCount": 30
+            },
+            {
+                "status": "active",
+                "_id": "60b72a64e9358a41edd163ba",
+                "name": "অধ্যায় ৩: সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস",
+                "lessonsCount": 70
+            },
+            {
+                "status": "active",
+                "_id": "60b72a64e9358a41edd163bb",
+                "name": "অধ্যায় ৪: ওয়েব ডিজাইন পরিচিতি এবং HTML",
+                "lessonsCount": 47
+            },
+            {
+                "status": "active",
+                "_id": "60b72a64e9358a41edd163bc",
+                "name": "অধ্যায় ৫: প্রোগ্রামিং ভাষা",
+                "lessonsCount": 108
+            },
+            {
+                "status": "inactive",
+                "_id": "60b72a64e9358a41edd163bd",
+                "name": "অধ্যায় ৬: ডেটাবেজ ম্যানেজমেন্ট সিস্টেম",
+                "lessonsCount": 24
+            }
+        ],
+        "className": "hsc",
+        "createdAt": "2021-06-02T06:49:56.134Z",
+        "__v": 17,
+        "lastUpdatedAt": "2022-07-31T12:05:01.242Z",
+        "lastUpdatedBy": "5f7d58db31139571d0fcb9b4",
+        "group": "all",
+        "order": 7
+    },
+    {
+        "paperCount": 2,
+        "status": "active",
+        "videoEnabled": true,
+        "deleted": false,
+        "_id": "60b7150be9358a41edd15ed8",
+        "name": "পদার্থবিজ্ঞান",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811870547_Accounting%20copy%203-100.jpg",
+        "chapters": [
+            {
+                "status": "active",
+                "_id": "60b7150be9358a41edd15ed9",
+                "name": "অধ্যায় ১: ভৌতজগত ও পরিমাপ",
+                "lessonsCount": 12,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72e52e9358a41edd16477",
+                "name": "অধ্যায় ২: ভেক্টর",
+                "lessonsCount": 49,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72e67e9358a41edd1647d",
+                "name": "অধ্যায় ৩: গতিবিদ্যা",
+                "lessonsCount": 26,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72ea8e9358a41edd1648c",
+                "name": "অধ্যায় ৪: নিউটনিয়ান বলবিদ্যা",
+                "lessonsCount": 39,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72ea8e9358a41edd1648d",
+                "name": " অধ্যায় ৫: কাজ, ক্ষমতা ও শক্তি",
+                "lessonsCount": 15,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72ea8e9358a41edd1648e",
+                "name": "অধ্যায় ৬: মহাকর্ষ ও অভিকর্ষ",
+                "lessonsCount": 22,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72ea8e9358a41edd1648f",
+                "name": "অধ্যায় ৭: পদার্থের গাঠনিক ধর্ম",
+                "lessonsCount": 27,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72ea8e9358a41edd16490",
+                "name": "অধ্যায় ৮: পর্যায়বৃত্ত গতি",
+                "lessonsCount": 25,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72ea8e9358a41edd16491",
+                "name": "অধ্যায় ৯: তরঙ্গ ",
+                "lessonsCount": 33,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b72ea8e9358a41edd16492",
+                "name": "অধ্যায় ১০: আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব ",
+                "lessonsCount": 22,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "627615c0db44b13e0904637e",
+                "name": "অধ্যায় ১: তাপগতিবিদ্যা ",
+                "paper": 2,
+                "lessonsCount": 23
+            },
+            {
+                "status": "active",
+                "_id": "627615c0db44b13e0904637f",
+                "name": "অধ্যায় ২: স্থির তড়িৎ",
+                "paper": 2,
+                "lessonsCount": 64
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046380",
+                "name": "অধ্যায় ৩: চল তড়িৎ ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046381",
+                "name": "অধ্যায় ৪: তড়িৎ প্রবাহের চৌম্বক ক্রিয়া ও চুম্বকত্ব ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046382",
+                "name": " অধ্যায় ৫: তড়িৎচুম্বকীয় আবেশ ও পরিবর্তী প্রবাহ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046383",
+                "name": "অধ্যায় ৬: জ্যামিতিক আলোকবিজ্ঞান ",
+                "paper": 2
+            },
+            {
+                "status": "active",
+                "_id": "627615c0db44b13e09046384",
+                "name": "অধ্যায় ৭: ভৌত আলোকবিজ্ঞান ",
+                "paper": 2,
+                "lessonsCount": 39
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046385",
+                "name": "অধ্যায় ৮: আধুনিক পদার্থবিজ্ঞান ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046386",
+                "name": "অধ্যায় ৯: নিউক্লিয়ার পদার্থবিজ্ঞান ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046387",
+                "name": "অধ্যায় ১০: সেমিকন্ডাক্টার ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "627615c0db44b13e09046388",
+                "name": "অধ্যায় ১১: জ্যাোতির্বিজ্ঞান ",
+                "paper": 2
+            }
+        ],
+        "className": "hsc",
+        "createdAt": "2021-06-02T05:20:11.032Z",
+        "__v": 29,
+        "lastUpdatedAt": "2022-08-16T12:10:30.997Z",
+        "lastUpdatedBy": "5f7d58db31139571d0fcb9b4",
+        "group": "science",
+        "order": 1
+    },
+    {
+        "paperCount": 2,
+        "status": "active",
+        "videoEnabled": true,
+        "deleted": false,
+        "_id": "60b7433716dafe57f2f2d597",
+        "name": "রসায়ন",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811900968_bangla%20copy%203-100.jpg",
+        "chapters": [
+            {
+                "status": "inactive",
+                "_id": "619fbd634427f52f675c0c17",
+                "name": "অধ্যায় ১: ল্যাবরেটরির নিরাপদ ব্যবহার ",
+                "lessonsCount": null,
+                "paper": 1
+            },
+            {
+                "status": "active",
+                "_id": "60b75c9c1df503181818ff99",
+                "name": "অধ্যায় ২(গুণগত রসায়ন): পরমাণুর গঠন",
+                "paper": 1,
+                "lessonsCount": 37
+            },
+            {
+                "status": "active",
+                "_id": "60b75c9c1df503181818ff9a",
+                "name": "অধ্যায় ২(গুণগত রসায়ন): দ্রাব্যতা",
+                "paper": 1,
+                "lessonsCount": 27
+            },
+            {
+                "status": "active",
+                "_id": "60b75c9c1df503181818ff9b",
+                "name": "অধ্যায় ২(গুণগত রসায়ন): দ্রাবক নিষ্কাশন",
+                "paper": 1,
+                "lessonsCount": 6
+            },
+            {
+                "status": "active",
+                "_id": "60b75c9c1df503181818ff9d",
+                "name": "অধ্যায় ৩(মৌলের পর্যায়বৃত্ত ধর্ম): পর্যায় সারণি",
+                "paper": 1,
+                "lessonsCount": 9
+            },
+            {
+                "status": "active",
+                "_id": "60b75c9c1df503181818ff9e",
+                "name": "অধ্যায় ৩: মৌলের পর্যায়বৃত্ত ধর্ম ",
+                "paper": 1,
+                "lessonsCount": 40
+            },
+            {
+                "status": "active",
+                "_id": "60b75cea1df503181818ffa6",
+                "name": "অধ্যায় ৩(মৌলের পর্যায়বৃত্ত ধর্ম):  রাসায়নিক বন্ধন",
+                "paper": 1,
+                "lessonsCount": 35
+            },
+            {
+                "status": "active",
+                "_id": "60b75d641df5031818190064",
+                "name": "অধ্যায় ৩(মৌলের পর্যায়বৃত্ত ধর্ম):  গ্রুপ ভিত্তিক রসায়ন",
+                "paper": 1,
+                "lessonsCount": 51
+            },
+            {
+                "status": "inactive",
+                "_id": "60b75d641df5031818190065",
+                "name": "অধ্যায় ৪(রাসায়নিক পরিবর্তন): গ্রিন কেমিস্ট্রি",
+                "paper": 1,
+                "lessonsCount": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "60b75d641df5031818190066",
+                "name": "অধ্যায় ৪(রাসায়নিক পরিবর্তন): রাসায়নিক গতিবিদ্যা",
+                "paper": 1,
+                "lessonsCount": 20
+            },
+            {
+                "status": "inactive",
+                "_id": "60b75d641df5031818190067",
+                "name": "অধ্যায় ৪(রাসায়নিক পরিবর্তন): রাসায়নিক সাম্যবস্থা",
+                "paper": 1,
+                "lessonsCount": 17
+            },
+            {
+                "status": "active",
+                "_id": "60b75d641df5031818190068",
+                "name": "অধ্যায় ৪(রাসায়নিক পরিবর্তন): অম্ল–ক্ষারক সাম্যবস্থা",
+                "paper": 1,
+                "lessonsCount": 40
+            },
+            {
+                "status": "inactive",
+                "_id": "60b75d641df5031818190069",
+                "name": "অধ্যায় ৪(রাসায়নিক পরিবর্তন): তাপ রসায়ন ",
+                "paper": 1,
+                "lessonsCount": 30
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdff009753b7cd89beb3a",
+                "name": "অধ্যায় ৫: কর্মমুখী রসায়ন",
+                "paper": 1
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdea7d7d23d7ca69ab1ed",
+                "name": "অধ্যায় ১(পরিবেশ রসায়ন ): পদার্থের অবস্থা (বয়েল, চার্লস, গে লুসাক)",
+                "paper": 2,
+                "lessonsCount": 24
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbded5d7d23d7ca69ab335",
+                "name": "অধ্যায় ১(পরিবেশ রসায়ন ): পদার্থের অবস্থা (আংশিক চাপ এবং কণার গতিতত্ত্ব )",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbded5d7d23d7ca69ab336",
+                "name": "অধ্যায় ১(পরিবেশ রসায়ন ): অম্ল-ক্ষারক তত্ত্ব এবং পরিবেশ রসায়ন ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdf00d7d23d7ca69ab442",
+                "name": "অধ্যায় ২(জৈব রসায়ন): জৈব যৌগের পরিচিতি",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdf00d7d23d7ca69ab443",
+                "name": "অধ্যায় ২(জৈব রসায়ন): হাইড্রোকার্বন",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdf00d7d23d7ca69ab444",
+                "name": "অধ্যায় ২(জৈব রসায়ন): অ্যালিফেটিক ও আরোমেটিক হ্যালোজেন জাতক",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdf00d7d23d7ca69ab445",
+                "name": "অধ্যায় ২(জৈব রসায়ন): অ্যালকোহল, ফেনন ও ইথার",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdf00d7d23d7ca69ab446",
+                "name": "অধ্যায় ২(জৈব রসায়ন): অ্যালডিহাইড ও কিটোন",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdf7a09753b7cd89be91e",
+                "name": "অধ্যায় ২(জৈব রসায়ন): জৈব এসিড ও এদের জাতক",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbdf7a09753b7cd89be91f",
+                "name": "অধ্যায় ২(জৈব রসায়ন): জৈব যৌগের সার-সংক্ষেপ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbe06f7025da7cee5e08ce",
+                "name": "অধ্যায় ৩(পরিমাণগত রসায়ন): রাসায়নিক গণনা",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbe09f7025da7cee5e0a05",
+                "name": "অধ্যায় ৩(পরিমাণগত রসায়ন): জারণ - বিজারণ",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbe16c7025da7cee5e0f99",
+                "name": "অধ্যায় ৪: তড়িৎ রসায়ন",
+                "paper": 2
+            },
+            {
+                "status": "inactive",
+                "_id": "62bbe16c7025da7cee5e0f9a",
+                "name": "অধ্যায় ৫: অর্থনৈতিক রসায়ন",
+                "paper": 2
+            }
+        ],
+        "className": "hsc",
+        "createdAt": "2021-06-02T08:37:11.989Z",
+        "__v": 53,
+        "lastUpdatedAt": "2022-08-08T16:53:19.973Z",
+        "lastUpdatedBy": "5f7d58db31139571d0fcb9b4",
+        "group": "science",
+        "order": 2
+    }
+]
