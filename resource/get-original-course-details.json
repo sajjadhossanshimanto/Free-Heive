@@ -1,0 +1,421 @@
+{
+    "deleted": false,
+    "allowMultipleAnswer": "no",
+    "status": "active",
+    "fee": 0,
+    "paymentMode": "monthly",
+    "iosFee": 0,
+    "discount": 0,
+    "discountType": "flat",
+    "categories": [],
+    "isPartialPaymentAllowed": false,
+    "isProblemSolving": false,
+    "marksPerQuestion": 1,
+    "negativeMarksPerQuestion": 0,
+    "isModelTest": false,
+    "assignmentEnabled": false,
+    "type": "Original",
+    "enrolledCount": 0,
+    "syllabusItems": [],
+    "reasons": [],
+    "duration": 1,
+    "lessonCount": 0,
+    "examCount": 0,
+    "noteCount": 0,
+    "durationType": "hour",
+    "_id": "615adbca12de8a3ceaddcdcf",
+    "sections": [
+        {
+            "_id": "615adbca12de8a3ceaddcdd0",
+            "name": "অনুশীলনী ১.১ঃ ম্যাট্রিক্স",
+            "contents": [
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615adbca12de8a3ceaddcdd1",
+                    "title": "ম্যাট্রিক্স এর ধারণা",
+                    "vimeoId": "622338938",
+                    "duration": 3,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615adbca12de8a3ceaddcdd2",
+                    "title": "ম্যাট্রিক্স এর ক্রম বা Order",
+                    "vimeoId": "622346301",
+                    "duration": 7,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615adbca12de8a3ceaddcdd3",
+                    "title": "ম্যাট্রিক্স এর প্রকারভেদ",
+                    "vimeoId": "622347023",
+                    "duration": 36,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615adbca12de8a3ceaddcdd4",
+                    "title": "ম্যাট্রিক্স এর সমতা",
+                    "vimeoId": "622343484",
+                    "duration": 11,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f1a",
+                    "title": "ম্যাট্রিক্স এর যোগ ও বিয়োগ ",
+                    "vimeoId": "622344681",
+                    "duration": 12,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f1b",
+                    "title": "ম্যাট্রিক্স এর স্কেলার গুন",
+                    "vimeoId": "622345239",
+                    "duration": 10,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f1c",
+                    "title": "ম্যাট্রিক্স এর গুন",
+                    "vimeoId": "622353543",
+                    "duration": 54,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f1d",
+                    "title": "ম্যাট্রিক্স সংযোজনের বৈশিষ্ট্য",
+                    "vimeoId": "622358155",
+                    "duration": 9,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f1e",
+                    "title": "ম্যাট্রিক্স স্কেলার গুণের বৈশিষ্ট্য",
+                    "vimeoId": "622358826",
+                    "duration": 7,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f1f",
+                    "title": "ম্যাট্রিক্স গুণের বৈশিষ্ট্য",
+                    "vimeoId": "622359150",
+                    "duration": 27,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f20",
+                    "title": "ট্রান্সপোজ ম্যাট্রিক্সের বৈশিষ্ট্য",
+                    "vimeoId": "622349333",
+                    "duration": 14,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae62612de8a3ceade5f21",
+                    "title": "ম্যাট্রিক্স এর বহুপদী",
+                    "vimeoId": "622350322",
+                    "duration": 31,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "exam",
+                    "isFree": false,
+                    "_id": "62e4d315d100f32b6294c82a",
+                    "title": "Assessment Test: Matrix- 1.1",
+                    "exam": {
+                        "duration": {
+                            "type": "minutes",
+                            "value": "15"
+                        },
+                        "deleted": false,
+                        "isOfflineExam": false,
+                        "hasMultipleAnswers": false,
+                        "status": "active",
+                        "lastUpdatedBy": "User",
+                        "_id": "628f5ca7844b6f17d765a135",
+                        "name": "HSC Mathematics : Matrix- 1.1",
+                        "syllabus": "Matrix- 1.1",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "examType": "subject",
+                        "noOfSubjectsToAnswer": "",
+                        "totalQuestions": "15",
+                        "level": "hsc",
+                        "group": "science",
+                        "type": "assessmentTest",
+                        "subject": "60b7322ae9358a41edd165c7",
+                        "createdAt": "2022-05-26T10:55:35.564Z",
+                        "examDate": "2022-05-26T10:55:35.564Z",
+                        "results": [],
+                        "lastUpdatedAt": "2022-05-26T10:55:35.564Z",
+                        "__v": 35
+                    },
+                    "takenExamData": {
+                        "isTaken": false,
+                        "fullMarks": 0,
+                        "totalMarksObtained": 0
+                    }
+                }
+            ],
+            "progress": 0
+        },
+        {
+            "_id": "615ae66a12de8a3ceade611e",
+            "name": "অনুশীলনী ১.২ঃ নির্ণায়ক",
+            "contents": [
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae66a12de8a3ceade611f",
+                    "title": "নির্ণায়কের ধারণা এবং নির্ণায়কের অনুরাশি ও সহগুনক",
+                    "vimeoId": "622394380",
+                    "duration": 35,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": true,
+                        "lastDuration": 142
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae76f12de8a3ceade6a9f",
+                    "title": "নির্ণায়কের ধর্মাবলি",
+                    "vimeoId": "622373938",
+                    "duration": 33,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": true,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615ae76f12de8a3ceade6aa0",
+                    "title": "নির্ণায়কের সমস্যাবলি প্রমাণ কর",
+                    "vimeoId": "622390395",
+                    "duration": 49,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": false,
+                        "lastDuration": 10
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615aeac012de8a3ceade85a4",
+                    "title": "বিস্তার না করে প্রমাণ কর",
+                    "vimeoId": "622378544",
+                    "duration": 19,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615aebea12de8a3ceade94bf",
+                    "title": "সমীকরণের মূল নির্ণয় কর",
+                    "vimeoId": "622381533",
+                    "duration": 21,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615aebea12de8a3ceade94c0",
+                    "title": "ব্যতিক্রমি ম্যাট্রিক্স, অব্যতিক্রমি ম্যাট্রিক্স",
+                    "vimeoId": "622383800",
+                    "duration": 14,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615aebea12de8a3ceade94c1",
+                    "title": "অনুবন্ধী ম্যাট্রিক্স",
+                    "vimeoId": "622384510",
+                    "duration": 18,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615aebea12de8a3ceade94c2",
+                    "title": "বিপরীত ম্যাট্রিক্স ও এর বৈশিষ্ট্য",
+                    "vimeoId": "622386568",
+                    "duration": 38,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615aebea12de8a3ceade94c3",
+                    "title": "বিপরিত ম্যাট্রিক্স এর সাহায্যে সমীকরণ সমাধান ",
+                    "vimeoId": "622368806",
+                    "duration": 28,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615aebea12de8a3ceade94c4",
+                    "title": "ক্রেমারের সাহায্যে সমীকরণ সমাধান ",
+                    "vimeoId": "622372182",
+                    "duration": 24,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "exam",
+                    "isFree": false,
+                    "_id": "62e4c98cd4d40029f9be7ce3",
+                    "title": "Assessment Test: Determinant",
+                    "exam": {
+                        "duration": {
+                            "type": "minutes",
+                            "value": "15"
+                        },
+                        "deleted": false,
+                        "isOfflineExam": false,
+                        "hasMultipleAnswers": false,
+                        "status": "active",
+                        "lastUpdatedBy": "User",
+                        "_id": "6291af4c50dcc63ca49182e2",
+                        "name": "HSC Mathematics : Determinant -1",
+                        "syllabus": "Determinant -1",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "examType": "subject",
+                        "noOfSubjectsToAnswer": "",
+                        "totalQuestions": "15",
+                        "level": "hsc",
+                        "group": "science",
+                        "type": "assessmentTest",
+                        "subject": "60b7322ae9358a41edd165c7",
+                        "createdAt": "2022-05-28T05:12:44.792Z",
+                        "examDate": "2022-05-28T05:12:44.792Z",
+                        "results": [],
+                        "lastUpdatedAt": "2022-05-28T05:12:44.792Z",
+                        "__v": 25
+                    },
+                    "takenExamData": {
+                        "isTaken": false,
+                        "fullMarks": 0,
+                        "totalMarksObtained": 0
+                    }
+                }
+            ],
+            "progress": 18
+        }
+    ],
+    "name": "অধ্যায় ১: ম্যাট্রিক্স ও নির্ণায়ক",
+    "subject": {
+        "_id": "60b7322ae9358a41edd165c7",
+        "name": "উচ্চতর গণিত",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811472593_HM.jpg",
+        "className": "hsc"
+    },
+    "chapterId": "60b7322ae9358a41edd165c8",
+    "createdAt": "2021-10-04T10:47:38.251Z",
+    "exams": [],
+    "attachments": [],
+    "topics": [],
+    "batches": [],
+    "instructors": [],
+    "__v": 64,
+    "progress": 8
+}

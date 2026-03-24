@@ -1,0 +1,769 @@
+{
+    "deleted": false,
+    "allowMultipleAnswer": "no",
+    "status": "active",
+    "fee": 0,
+    "paymentMode": "monthly",
+    "iosFee": 0,
+    "discount": 0,
+    "discountType": "flat",
+    "categories": [],
+    "isPartialPaymentAllowed": false,
+    "isProblemSolving": false,
+    "marksPerQuestion": 1,
+    "negativeMarksPerQuestion": 0,
+    "isModelTest": false,
+    "assignmentEnabled": false,
+    "type": "Original",
+    "enrolledCount": 0,
+    "syllabusItems": [],
+    "reasons": [],
+    "duration": 1,
+    "lessonCount": 0,
+    "examCount": 0,
+    "noteCount": 0,
+    "durationType": "hour",
+    "_id": "615198bf498cff1a78ce5bc4",
+    "sections": [
+        {
+            "_id": "615198bf498cff1a78ce5bc5",
+            "name": "কোষ সম্পর্কে আলোচনা ও আবরণ ",
+            "contents": [
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615198bf498cff1a78ce5bc6",
+                    "title": "কোষের সাধারণ আলোচনা",
+                    "vimeoId": "667099593",
+                    "duration": 18,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615198bf498cff1a78ce5bc7",
+                    "title": "কোষ প্রাচীর",
+                    "vimeoId": "667606216",
+                    "duration": 26,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "615198bf498cff1a78ce5bc8",
+                    "title": "প্লাজমামেমব্রেন ",
+                    "vimeoId": "645675137",
+                    "duration": 24,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "exam",
+                    "isFree": false,
+                    "_id": "628cd170c75be877911e63c3",
+                    "title": "Assessment Test: কোষ সম্পর্কে আলোচনা ও আবরণ ",
+                    "exam": {
+                        "duration": {
+                            "type": "minutes",
+                            "value": "20"
+                        },
+                        "deleted": false,
+                        "isOfflineExam": false,
+                        "hasMultipleAnswers": false,
+                        "status": "active",
+                        "lastUpdatedBy": "User",
+                        "_id": "628b069f7aced759ea498e8d",
+                        "name": "HSC Botany- 1.1: কোষ সম্পর্কে আলোচনা ও আবরণ ",
+                        "syllabus": "কোষ সম্পর্কে আলোচনা ও আবরণ ",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "examType": "subject",
+                        "noOfSubjectsToAnswer": "",
+                        "totalQuestions": "20",
+                        "level": "hsc",
+                        "group": "science",
+                        "type": "assessmentTest",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdAt": "2022-05-23T03:59:27.852Z",
+                        "examDate": "2022-05-23T03:59:27.852Z",
+                        "results": [],
+                        "lastUpdatedAt": "2022-05-23T03:59:27.852Z",
+                        "__v": 30
+                    },
+                    "takenExamData": {
+                        "isTaken": false,
+                        "fullMarks": 0,
+                        "totalMarksObtained": 0
+                    }
+                },
+                {
+                    "contentType": "note",
+                    "isFree": false,
+                    "_id": "628cbf7720a409736724028a",
+                    "title": "Note on: কোষ সম্পর্কে আলোচনা ও আবরণ ",
+                    "note": {
+                        "price": 0,
+                        "iosPrice": 0,
+                        "enrolledCount": 0,
+                        "categories": [],
+                        "authors": [],
+                        "status": "active",
+                        "allowOnlinePurchase": false,
+                        "publishingStatus": "unpublished",
+                        "isDownloadable": false,
+                        "deleted": false,
+                        "_id": "628cbdc320a409736723eabc",
+                        "name": "HSC Botany- 1.1: কোষ সম্পর্কে আলোচনা ও আবরণ ",
+                        "coverPhoto": "",
+                        "pages": 4,
+                        "edition": "2022",
+                        "description": "",
+                        "pdf": "https://eduhive-ebooks.s3.ap-southeast-1.amazonaws.com/1.1%20%281%29.pdf",
+                        "demoPdf": "",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "chapters": [
+                            {
+                                "_id": "628cbdc320a409736723eabd",
+                                "name": "কোষ সম্পর্কে আলোচনা ও আবরণ ",
+                                "startPage": "1"
+                            }
+                        ],
+                        "level": "hsc",
+                        "group": "science",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdBy": "5d16f3e66fbde90de307d949",
+                        "createdAt": "2022-05-24T11:13:07.605Z",
+                        "rejectionReasons": [],
+                        "__v": 1,
+                        "lastUpdatedAt": "2022-08-16T10:44:22.917Z",
+                        "lastUpdatedBy": "5d16f3e66fbde90de307d949"
+                    }
+                }
+            ],
+            "progress": 0
+        },
+        {
+            "_id": "6151990c498cff1a78ce6112",
+            "name": "সাইটোপ্লাজমিয় অঙ্গাণু",
+            "contents": [
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "6151990c498cff1a78ce6113",
+                    "title": "রাইবোসোম",
+                    "vimeoId": "645675924",
+                    "duration": 16,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "6151990c498cff1a78ce6114",
+                    "title": "গলগি বডি",
+                    "vimeoId": "645676030",
+                    "duration": 20,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "6151990c498cff1a78ce6115",
+                    "title": "এন্ডোপ্লাজমিক রেটিকুলাম",
+                    "vimeoId": "645714818",
+                    "duration": 15,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529c69e2fdac31b742cac1",
+                    "title": "লাইসোসোম",
+                    "vimeoId": "645676178",
+                    "duration": 18,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529c69e2fdac31b742cac2",
+                    "title": "মাইটোকন্ড্রিয়া",
+                    "vimeoId": "645676293",
+                    "duration": 22,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccd2",
+                    "title": "প্লাস্টিড",
+                    "vimeoId": "645676457",
+                    "duration": 15,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccd3",
+                    "title": "ক্লোরোপ্লাস্ট",
+                    "vimeoId": "645676560",
+                    "duration": 25,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccd4",
+                    "title": "সেন্ট্রিওল ও কোষ গহ্বর",
+                    "vimeoId": "645676734",
+                    "duration": 17,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccd5",
+                    "title": "Cytoskeleton বা কোষীয় কঙ্কাল",
+                    "vimeoId": "702315637",
+                    "duration": 14,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "exam",
+                    "isFree": false,
+                    "_id": "628cd170c75be877911e63cf",
+                    "title": "Assessment Test: সাইটোপ্লাজমিয় অঙ্গাণু",
+                    "exam": {
+                        "duration": {
+                            "type": "minutes",
+                            "value": "20"
+                        },
+                        "deleted": false,
+                        "isOfflineExam": false,
+                        "hasMultipleAnswers": false,
+                        "status": "active",
+                        "lastUpdatedBy": "User",
+                        "_id": "628b07257aced759ea4992d5",
+                        "name": "HSC Botany- 1.2: সাইটোপ্লাজমিয় অঙ্গাণু",
+                        "syllabus": "সাইটোপ্লাজমিয় অঙ্গাণু",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "examType": "subject",
+                        "noOfSubjectsToAnswer": "",
+                        "totalQuestions": "20",
+                        "level": "hsc",
+                        "group": "science",
+                        "type": "assessmentTest",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdAt": "2022-05-23T03:59:27.852Z",
+                        "examDate": "2022-05-23T03:59:27.852Z",
+                        "results": [],
+                        "lastUpdatedAt": "2022-05-23T03:59:27.852Z",
+                        "__v": 24
+                    },
+                    "takenExamData": {
+                        "isTaken": false,
+                        "fullMarks": 0,
+                        "totalMarksObtained": 0
+                    }
+                },
+                {
+                    "contentType": "note",
+                    "isFree": false,
+                    "_id": "628cbfc320a40973672404ee",
+                    "title": "Note on: সাইটোপ্লাজমিয় অঙ্গাণু",
+                    "note": {
+                        "price": 0,
+                        "iosPrice": 0,
+                        "enrolledCount": 0,
+                        "categories": [],
+                        "authors": [],
+                        "status": "active",
+                        "allowOnlinePurchase": false,
+                        "publishingStatus": "unpublished",
+                        "isDownloadable": true,
+                        "deleted": false,
+                        "_id": "628cbe1620a409736723f14e",
+                        "name": "HSC Botany- 1.2: সাইটোপ্লাজমিয় অঙ্গাণু",
+                        "coverPhoto": "",
+                        "pages": 6,
+                        "edition": "2022",
+                        "description": "",
+                        "pdf": "https://eduhive-ebooks.s3.ap-southeast-1.amazonaws.com/1.2%20%281%29.pdf",
+                        "demoPdf": "",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "chapters": [
+                            {
+                                "_id": "628cbe1620a409736723f14f",
+                                "name": "সাইটোপ্লাজমিয় অঙ্গাণু",
+                                "startPage": "1"
+                            }
+                        ],
+                        "level": "hsc",
+                        "group": "science",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdBy": "5d16f3e66fbde90de307d949",
+                        "createdAt": "2022-05-24T11:14:30.541Z",
+                        "rejectionReasons": [],
+                        "__v": 2,
+                        "lastUpdatedAt": "2022-08-16T10:46:06.601Z",
+                        "lastUpdatedBy": "5d16f3e66fbde90de307d949"
+                    }
+                }
+            ],
+            "progress": 0
+        },
+        {
+            "_id": "61529cc3e2fdac31b742ccd6",
+            "name": "নিউক্লিয়াস ও নিউক্লিয়াসের  অভ্যন্তরীন গঠন",
+            "contents": [
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccd7",
+                    "title": "নিউক্লিয়াস",
+                    "vimeoId": "669082568",
+                    "duration": 17,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccd8",
+                    "title": "ক্রোমোসোমের গঠন\t",
+                    "vimeoId": "707677873",
+                    "duration": 21,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccd9",
+                    "title": "ক্রোমোসোমের প্রকারভেদ ও সংখ্যা",
+                    "vimeoId": "668916031",
+                    "duration": 10,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529cc3e2fdac31b742ccda",
+                    "title": "নিউক্লিক এসিড",
+                    "vimeoId": "645677939",
+                    "duration": 18,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "exam",
+                    "isFree": false,
+                    "_id": "628cd170c75be877911e63d6",
+                    "title": "Assessment Test: নিউক্লিয়াস ও নিউক্লিয়াসের  অভ্যন্তরীন গঠন",
+                    "exam": {
+                        "duration": {
+                            "type": "minutes",
+                            "value": "29"
+                        },
+                        "deleted": false,
+                        "isOfflineExam": false,
+                        "hasMultipleAnswers": false,
+                        "status": "active",
+                        "lastUpdatedBy": "User",
+                        "_id": "628b07cf7aced759ea4997ef",
+                        "name": "HSC Botany- 1.3: নিউলিয়াস ও নিউক্লিয়াসের অভ্যন্তরের গঠন",
+                        "syllabus": "নিউলিয়াস ও নিউক্লিয়াসের অভ্যন্তরের গঠন",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "examType": "subject",
+                        "noOfSubjectsToAnswer": "",
+                        "totalQuestions": "29",
+                        "level": "hsc",
+                        "group": "science",
+                        "type": "assessmentTest",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdAt": "2022-05-23T03:59:27.852Z",
+                        "examDate": "2022-05-23T03:59:27.852Z",
+                        "results": [],
+                        "lastUpdatedAt": "2022-05-23T03:59:27.852Z",
+                        "__v": 36
+                    },
+                    "takenExamData": {
+                        "isTaken": false,
+                        "fullMarks": 0,
+                        "totalMarksObtained": 0
+                    }
+                },
+                {
+                    "contentType": "note",
+                    "isFree": false,
+                    "_id": "628cbfc320a40973672404f4",
+                    "title": "Note on: নিউক্লিয়াস ও নিউক্লিয়াসের  অভ্যন্তরীন গঠন",
+                    "note": {
+                        "price": 0,
+                        "iosPrice": 0,
+                        "enrolledCount": 0,
+                        "categories": [],
+                        "authors": [],
+                        "status": "active",
+                        "allowOnlinePurchase": false,
+                        "publishingStatus": "unpublished",
+                        "isDownloadable": false,
+                        "deleted": false,
+                        "_id": "628cbeca20a409736723fbb5",
+                        "name": "HSC Botany- 1.3: নিউক্লিয়াস ও নিউক্লিয়াসের  অভ্যন্তরীন গঠন",
+                        "coverPhoto": "",
+                        "pages": 3,
+                        "edition": "2022",
+                        "description": "",
+                        "pdf": "https://eduhive-ebooks.s3.ap-southeast-1.amazonaws.com/1.3%20%281%29.pdf",
+                        "demoPdf": "",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "chapters": [
+                            {
+                                "_id": "628cbeca20a409736723fbb6",
+                                "name": "নিউক্লিয়াস ও নিউক্লিয়াসের  অভ্যন্তরীন গঠন",
+                                "startPage": "1"
+                            }
+                        ],
+                        "level": "hsc",
+                        "group": "science",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdBy": "5d16f3e66fbde90de307d949",
+                        "createdAt": "2022-05-24T11:17:30.250Z",
+                        "rejectionReasons": [],
+                        "__v": 1,
+                        "lastUpdatedAt": "2022-08-16T10:46:27.901Z",
+                        "lastUpdatedBy": "5d16f3e66fbde90de307d949"
+                    }
+                }
+            ],
+            "progress": 0
+        },
+        {
+            "_id": "61529d02e2fdac31b742d024",
+            "name": "জেনেটিক বস্তু নিয়ে আলোচনা",
+            "contents": [
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529d02e2fdac31b742d025",
+                    "title": "DNA এর গঠন ও কাজ ",
+                    "vimeoId": "645678394",
+                    "duration": 20,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529d02e2fdac31b742d026",
+                    "title": "RNA এর গঠন ও কাজ ",
+                    "vimeoId": "668908363",
+                    "duration": 11,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "exam",
+                    "isFree": false,
+                    "_id": "628cd170c75be877911e63db",
+                    "title": "Assessment Test: জেনেটিক বস্তু নিয়ে আলোচনা",
+                    "exam": {
+                        "duration": {
+                            "type": "minutes",
+                            "value": "20"
+                        },
+                        "deleted": false,
+                        "isOfflineExam": false,
+                        "hasMultipleAnswers": false,
+                        "status": "active",
+                        "lastUpdatedBy": "User",
+                        "_id": "628b08bc7aced759ea499f62",
+                        "name": "HSC Botany- 1.4: জেনেটিক বস্তু নিয়ে আলোচনা",
+                        "syllabus": "জেনেটিক বস্তু নিয়ে আলোচনা",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "examType": "subject",
+                        "noOfSubjectsToAnswer": "",
+                        "totalQuestions": "20",
+                        "level": "hsc",
+                        "group": "science",
+                        "type": "assessmentTest",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdAt": "2022-05-23T03:59:27.852Z",
+                        "examDate": "2022-05-23T03:59:27.852Z",
+                        "results": [],
+                        "lastUpdatedAt": "2022-05-23T03:59:27.852Z",
+                        "__v": 25
+                    },
+                    "takenExamData": {
+                        "isTaken": false,
+                        "fullMarks": 0,
+                        "totalMarksObtained": 0
+                    }
+                },
+                {
+                    "contentType": "note",
+                    "isFree": false,
+                    "_id": "628cbfc320a40973672404f8",
+                    "title": "Note on: জেনেটিক বস্তু নিয়ে আলোচনা",
+                    "note": {
+                        "price": 0,
+                        "iosPrice": 0,
+                        "enrolledCount": 0,
+                        "categories": [],
+                        "authors": [],
+                        "status": "active",
+                        "allowOnlinePurchase": false,
+                        "publishingStatus": "unpublished",
+                        "isDownloadable": false,
+                        "deleted": false,
+                        "_id": "628cbf1a20a409736723fe8d",
+                        "name": "HSC Botany- 1.4: জেনেটিক বস্তু নিয়ে আলোচনা",
+                        "coverPhoto": "",
+                        "pages": 2,
+                        "edition": "2022",
+                        "description": "",
+                        "pdf": "https://eduhive-ebooks.s3.ap-southeast-1.amazonaws.com/1.4.pdf",
+                        "demoPdf": "",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "chapters": [
+                            {
+                                "_id": "628cbf1a20a409736723fe8e",
+                                "name": "জেনেটিক বস্তু নিয়ে আলোচনা",
+                                "startPage": "1"
+                            }
+                        ],
+                        "level": "hsc",
+                        "group": "science",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdBy": "5d16f3e66fbde90de307d949",
+                        "createdAt": "2022-05-24T11:18:50.512Z",
+                        "rejectionReasons": [],
+                        "__v": 2,
+                        "lastUpdatedAt": "2022-08-16T10:48:44.654Z",
+                        "lastUpdatedBy": "5d16f3e66fbde90de307d949"
+                    }
+                }
+            ],
+            "progress": 0
+        },
+        {
+            "_id": "61529d02e2fdac31b742d027",
+            "name": "Central Dogma of Life",
+            "contents": [
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529d02e2fdac31b742d028",
+                    "title": "DNA এর রেপ্লিকেশন",
+                    "vimeoId": "668201856",
+                    "duration": 24,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529d02e2fdac31b742d029",
+                    "title": "ট্রান্সকিপশন",
+                    "vimeoId": "668914704",
+                    "duration": 17,
+                    "watchHistory": {
+                        "isWatched": true,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529d02e2fdac31b742d02a",
+                    "title": "ট্রান্সলেশন",
+                    "vimeoId": "669079254",
+                    "duration": 11,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "video",
+                    "isFree": false,
+                    "_id": "61529d02e2fdac31b742d02b",
+                    "title": "জেনেটিক কোড",
+                    "vimeoId": "645679647",
+                    "duration": 6,
+                    "watchHistory": {
+                        "isWatched": false,
+                        "isCompleted": false,
+                        "lastDuration": 0
+                    }
+                },
+                {
+                    "contentType": "exam",
+                    "isFree": false,
+                    "_id": "628cd170c75be877911e63e2",
+                    "title": "Assessment Test: Central Dogma of Life",
+                    "exam": {
+                        "duration": {
+                            "type": "minutes",
+                            "value": "25"
+                        },
+                        "deleted": false,
+                        "isOfflineExam": false,
+                        "hasMultipleAnswers": false,
+                        "status": "active",
+                        "lastUpdatedBy": "User",
+                        "_id": "628b31747aced759ea4af348",
+                        "name": "HSC Botany- 1.5: Central Dogma of Life",
+                        "syllabus": "Central Dogma of Life",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "examType": "subject",
+                        "noOfSubjectsToAnswer": "",
+                        "totalQuestions": "25",
+                        "level": "hsc",
+                        "group": "science",
+                        "type": "assessmentTest",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdAt": "2022-05-23T03:59:27.852Z",
+                        "examDate": "2022-05-23T03:59:27.852Z",
+                        "results": [],
+                        "lastUpdatedAt": "2022-05-23T03:59:27.852Z",
+                        "__v": 31
+                    },
+                    "takenExamData": {
+                        "isTaken": false,
+                        "fullMarks": 0,
+                        "totalMarksObtained": 0
+                    }
+                },
+                {
+                    "contentType": "note",
+                    "isFree": false,
+                    "_id": "628cbfc320a40973672404fe",
+                    "title": "Note on: Central Dogma of Life",
+                    "note": {
+                        "price": 0,
+                        "iosPrice": 0,
+                        "enrolledCount": 0,
+                        "categories": [],
+                        "authors": [],
+                        "status": "active",
+                        "allowOnlinePurchase": false,
+                        "publishingStatus": "unpublished",
+                        "isDownloadable": false,
+                        "deleted": false,
+                        "_id": "628cbf5720a409736724017f",
+                        "name": "HSC Botany- 1.5: Central Dogma of Life",
+                        "coverPhoto": "",
+                        "pages": 4,
+                        "edition": "2022",
+                        "description": "",
+                        "pdf": "https://eduhive-ebooks.s3.ap-southeast-1.amazonaws.com/1.5.pdf",
+                        "demoPdf": "",
+                        "institute": "5d45561eeff04f105bbd0388",
+                        "chapters": [
+                            {
+                                "_id": "628cbf5720a4097367240180",
+                                "name": "Central Dogma of Life",
+                                "startPage": "1"
+                            }
+                        ],
+                        "level": "hsc",
+                        "group": "science",
+                        "subject": "60b72b60e9358a41edd16416",
+                        "createdBy": "5d16f3e66fbde90de307d949",
+                        "createdAt": "2022-05-24T11:19:51.760Z",
+                        "rejectionReasons": [],
+                        "__v": 0
+                    }
+                }
+            ],
+            "progress": 0
+        }
+    ],
+    "name": "কোষ ও এর গঠন",
+    "subject": {
+        "_id": "60b72b60e9358a41edd16416",
+        "name": "জীববিজ্ঞান",
+        "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811716590_ICT%20copy%203-100.jpg",
+        "className": "hsc"
+    },
+    "chapterId": "614ec4044d715908e178572d",
+    "createdAt": "2021-09-27T10:11:11.186Z",
+    "exams": [],
+    "attachments": [],
+    "topics": [],
+    "batches": [],
+    "instructors": [],
+    "__v": 64,
+    "progress": 0
+}

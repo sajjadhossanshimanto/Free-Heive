@@ -1,0 +1,50 @@
+{
+    "720p": {
+        "profile": "174",
+        "width": 1280,
+        "mime": "video/mp4",
+        "fps": 25,
+        "url": "https://vod-progressive.akamaized.net/exp=1662433952~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4467%2F24%2F622338938%2F2880029581.mp4~hmac=b2740bbb2d1864faf28691dc68a992877ef4ce956741c6cf1b2c615596b66300/vimeo-prod-skyfire-std-us/01/4467/24/622338938/2880029581.mp4",
+        "cdn": "akamai_interconnect",
+        "quality": "720p",
+        "id": "47101f08-35af-4a8a-85ef-d5c65a115698",
+        "origin": "gcs",
+        "height": 720
+    },
+    "540p": {
+        "profile": "165",
+        "width": 960,
+        "mime": "video/mp4",
+        "fps": 25,
+        "url": "https://vod-progressive.akamaized.net/exp=1662433952~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4467%2F24%2F622338938%2F2880029557.mp4~hmac=b8fab421757164df661f011e08ac7787f055855c17c619f3171dbf2b19daedd0/vimeo-prod-skyfire-std-us/01/4467/24/622338938/2880029557.mp4",
+        "cdn": "akamai_interconnect",
+        "quality": "540p",
+        "id": "8f306b39-67ab-4653-a10e-28eafe96f782",
+        "origin": "gcs",
+        "height": 540
+    },
+    "1080p": {
+        "profile": "175",
+        "width": 1920,
+        "mime": "video/mp4",
+        "fps": 25,
+        "url": "https://vod-progressive.akamaized.net/exp=1662433952~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4467%2F24%2F622338938%2F2880029565.mp4~hmac=756cabce696e805eb1dc446be5f86b65db8adaa0ae6013d79aaa81d5f94ce44f/vimeo-prod-skyfire-std-us/01/4467/24/622338938/2880029565.mp4",
+        "cdn": "akamai_interconnect",
+        "quality": "1080p",
+        "id": "c904ee6f-4098-4ddb-bede-a02b571a0bec",
+        "origin": "gcs",
+        "height": 1080
+    },
+    "360p": {
+        "profile": "164",
+        "width": 640,
+        "mime": "video/mp4",
+        "fps": 25,
+        "url": "https://vod-progressive.akamaized.net/exp=1662433952~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4467%2F24%2F622338938%2F2880029586.mp4~hmac=6356268f0785c719ab2ef9b7664abc49bc130ba0796a79fd2505d40d4257c86b/vimeo-prod-skyfire-std-us/01/4467/24/622338938/2880029586.mp4",
+        "cdn": "akamai_interconnect",
+        "quality": "360p",
+        "id": "060a9707-e31d-4f22-ac5a-9fd2be19e181",
+        "origin": "gcs",
+        "height": 360
+    }
+}

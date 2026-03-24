@@ -1,0 +1,88 @@
+{
+    "paperCount": 1,
+    "status": "active",
+    "videoEnabled": true,
+    "deleted": false,
+    "_id": "60b7322ae9358a41edd165c7",
+    "name": "উচ্চতর গণিত",
+    "icon": "https://eduhive-images.s3.ap-southeast-1.amazonaws.com/image_1637811472593_HM.jpg",
+    "chapters": [
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165c8",
+            "name": "অধ্যায় ১: ম্যাট্রিক্স ও নির্ণায়ক",
+            "paper": 1,
+            "lessonsCount": 22
+        },
+        {
+            "status": "inactive",
+            "_id": "60b7322ae9358a41edd165c9",
+            "name": "অধ্যায় ২: ভেক্টর",
+            "paper": 1,
+            "lessonsCount": 23
+        },
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165ca",
+            "name": "অধ্যায় ৩: সরলরেখা ",
+            "paper": 1,
+            "lessonsCount": 72
+        },
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165cb",
+            "name": "অধ্যায় ৪: বৃত্ত",
+            "paper": 1,
+            "lessonsCount": 35
+        },
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165cc",
+            "name": "অধ্যায় ৫: বিন্যাস ও সমাবেশ",
+            "paper": 1,
+            "lessonsCount": 36
+        },
+        {
+            "status": "inactive",
+            "_id": "60b7322ae9358a41edd165cd",
+            "name": "অধ্যায় ৬: ত্রিকোণমিতিক অনুপাত",
+            "paper": 1,
+            "lessonsCount": 15
+        },
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165ce",
+            "name": "অধ্যায় ৭: সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত",
+            "paper": 1,
+            "lessonsCount": 64
+        },
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165cf",
+            "name": "অধ্যায় ৮: ফাংশন ও ফাংশনের লেখচিত্র",
+            "paper": 1,
+            "lessonsCount": 61
+        },
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165d0",
+            "name": "অধ্যায় ৯: অন্তরীকরণ",
+            "paper": 1,
+            "lessonsCount": 50
+        },
+        {
+            "status": "active",
+            "_id": "60b7322ae9358a41edd165d1",
+            "name": "অধ্যায় ১০ঃ যোগজীকরণ",
+            "paper": 1,
+            "lessonsCount": 42
+        }
+    ],
+    "className": "hsc",
+    "createdAt": "2021-06-02T07:24:26.887Z",
+    "__v": 19,
+    "lastUpdatedAt": "2022-06-14T12:40:16.144Z",
+    "lastUpdatedBy": "62a877418db0af203d86dfb9",
+    "group": "science",
+    "order": 3
+}
