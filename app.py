@@ -22,10 +22,10 @@ except ImportError:
 FROZEN = getattr(sys, "frozen", False) or android
 if not FROZEN:
     from traceback import format_exception
-    from iamlaizy import reload_me
+    # from iamlaizy import reload_me
 
-    hiden_dependencies =['kvs', 'custom']
-    reload_me(*hiden_dependencies,  filter_extc=['.kv'])
+    # hiden_dependencies =['kvs', 'custom']
+    # reload_me(*hiden_dependencies,  filter_extc=['.kv'])
 
     H = 700
     W = H * (1080/1920)# 1920/1080 ratio
